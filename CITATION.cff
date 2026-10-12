@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "Code and results for: The choice of structural template can create apparent links between predicted protein stability and longevity in tetrapods"
+authors:
+  - family-names: "Torres Alegre"
+    given-names: "Enso Onill"
+    affiliation: "University of Notre Dame"
+    email: "etorresa@nd.edu"
+  - family-names: "Mora Jimenez"
+    given-names: "Diana E."
+    affiliation: "University of Notre Dame"
+version: "1.0.0"
+license: MIT
+repository-code: "https://github.com/Enso-bio/tetrapod-template-bias"
