@@ -1,0 +1,141 @@
+group,organism,taxon_id,accession,annotation_provider,annotation_name,busco_complete,is_refseq,species_taxid,species_name,binomial,anage_binomial,match_type
+Lepidosauria,Ahaetulla prasina,499056,GCF_028640845.1,NCBI RefSeq,GCF_028640845.1-RS_2023_07,0.9342246,True,499056,Ahaetulla prasina,ahaetulla_prasina,,
+Crocodylia,Alligator mississippiensis,8496,GCF_030867095.1,NCBI RefSeq,GCF_030867095.1-RS_2023_09,0.9858289,True,8496,Alligator mississippiensis,alligator_mississippiensis,alligator_mississippiensis,exact
+Crocodylia,Alligator sinensis,38654,GCF_000455745.1,NCBI RefSeq,NCBI Alligator sinensis Annotation Release 102,0.97526735,True,38654,Alligator sinensis,alligator_sinensis,alligator_sinensis,exact
+Amphibia,Ambystoma mexicanum,8296,GCF_040938575.1,NCBI RefSeq,GCF_040938575.1-RS_2024_10,0.95856875,True,8296,Ambystoma mexicanum,ambystoma_mexicanum,ambystoma_mexicanum,exact
+Lepidosauria,Anniella stebbinsi,2202111,GCA_051312515.2,Vertebrate Genome Laboratory,GCA_051312515.2-GB_2026_04_21,,False,2202111,Anniella stebbinsi,anniella_stebbinsi,,
+Lepidosauria,Anolis carolinensis,28377,GCF_035594765.1,NCBI RefSeq,GCF_035594765.1-RS_2024_02,0.9736631,True,28377,Anolis carolinensis,anolis_carolinensis,anolis_carolinensis,exact
+Lepidosauria,Anolis sagrei,38937,GCF_037176765.1,NCBI RefSeq,GCF_037176765.1-RS_2024_08,0.9735294,True,38937,Anolis sagrei,anolis_sagrei,,
+Amphibia,Anomaloglossus baeobatrachus,238106,GCF_048569485.1,NCBI RefSeq,GCF_048569485.1-RS_2025_07,0.9310734,True,238106,Anomaloglossus baeobatrachus,anomaloglossus_baeobatrachus,,
+Amphibia,Aquarana catesbeiana,8400,GCF_042186555.1,NCBI RefSeq,GCF_042186555.1-RS_2025_04,0.94538605,True,8400,Aquarana catesbeiana,aquarana_catesbeiana,lithobates_catesbeianus,ncbi_synonym
+Amphibia,Ascaphus truei,8439,GCF_040206685.1,NCBI RefSeq,GCF_040206685.1-RS_2025_07,0.9263654,True,8439,Ascaphus truei,ascaphus_truei,ascaphus_truei,exact
+Amphibia,Bombina bombina,8345,GCF_027579735.1,NCBI RefSeq,GCF_027579735.1-RS_2023_03,0.9376648,True,8345,Bombina bombina,bombina_bombina,bombina_bombina,exact
+Amphibia,Bufo bufo,8384,GCF_905171765.1,NCBI RefSeq,NCBI Bufo bufo Annotation Release 100,0.95254236,True,8384,Bufo bufo,bufo_bufo,bufo_bufo,exact
+Amphibia,Bufo gargarizans,30331,GCF_014858855.1,NCBI RefSeq,NCBI Bufo gargarizans Annotation Release 100,0.91770244,True,30331,Bufo gargarizans,bufo_gargarizans,,
+Lepidosauria,Candoia aspera,51853,GCF_035149785.1,NCBI RefSeq,GCF_035149785.1-RS_2024_02,0.96911764,True,51853,Candoia aspera,candoia_aspera,candoia_aspera,exact
+Testudines,Caretta caretta,8467,GCF_965140235.1,NCBI RefSeq,GCF_965140235.1-RS_2025_07,0.9881016,True,8467,Caretta caretta,caretta_caretta,caretta_caretta,exact
+Testudines,Carettochelys insculpta,44489,GCF_033958435.1,NCBI RefSeq,GCF_033958435.1-RS_2025_07,0.9856952,True,44489,Carettochelys insculpta,carettochelys_insculpta,carettochelys_insculpta,exact
+Testudines,Chelonia mydas,8469,GCF_015237465.2,NCBI RefSeq,NCBI Chelonia mydas Annotation Release 103,0.99010694,True,8469,Chelonia mydas,chelonia_mydas,chelonia_mydas,exact
+Testudines,Chelonoidis abingdonii,106734,GCF_003597395.2,NCBI RefSeq,GCF_003597395.2-RS_2025_06,0.9820856,True,106734,Chelonoidis abingdonii,chelonoidis_abingdonii,,
+Testudines,Chrysemys picta bellii,8478,GCF_011386835.1,NCBI RefSeq,GCF_011386835.1-RS_2024_05,0.98903745,True,8479,Chrysemys picta,chrysemys_picta,chrysemys_picta,exact
+Lepidosauria,Correlophus ciliatus,143539,GCA_040207535.2,GenBank submitter,GCA_040207535.2-GB_2025_08_12,,False,143539,Correlophus ciliatus,correlophus_ciliatus,,
+Amphibia,Crinia signifera,326986,GCF_055691185.1,NCBI RefSeq,GCF_055691185.1-RS_2026_05,0.94613934,True,326986,Crinia signifera,crinia_signifera,,
+Crocodylia,Crocodylus porosus,8502,GCF_001723895.1,NCBI RefSeq,NCBI Crocodylus porosus Annotation Release 100,0.96858287,True,8502,Crocodylus porosus,crocodylus_porosus,,
+Lepidosauria,Crotalus adamanteus,8729,GCA_039797435.1,Florida State University,Annotation submitted by Florida State University,,False,8729,Crotalus adamanteus,crotalus_adamanteus,crotalus_adamanteus,exact
+Lepidosauria,Crotalus horridus,35024,GCA_051820455.1,The Ohio State University,Annotation submitted by The Ohio State University,,False,35024,Crotalus horridus,crotalus_horridus,crotalus_horridus,exact
+Lepidosauria,Crotalus tigris,88082,GCF_016545835.1,NCBI RefSeq,NCBI Crotalus tigris Annotation Release 100,0.9584225,True,88082,Crotalus tigris,crotalus_tigris,crotalus_tigris,exact
+Lepidosauria,Cyclura pinguis,118683,GCA_030412105.1,Vertebrate Genome Laboratory,GCA_030412105.1-GB_2026_02_16,,False,118683,Cyclura pinguis,cyclura_pinguis,,
+outgroup,Danio rerio,7955,GCF_052040795.2,NCBI RefSeq,GCF_052040795.2-RS_2026_08,0.99230766,True,7955,Danio rerio,danio_rerio,,
+Amphibia,Dendrobates tinctorius,92724,GCF_039654945.1,NCBI RefSeq,GCF_039654945.1-RS_2025_04,0.94764596,True,92724,Dendrobates tinctorius,dendrobates_tinctorius,,
+Amphibia,Dendropsophus ebraccatus,150705,GCF_027789765.1,NCBI RefSeq,GCF_027789765.1-RS_2024_11,0.95800376,True,150705,Dendropsophus ebraccatus,dendropsophus_ebraccatus,,
+Testudines,Dermochelys coriacea,27794,GCF_009764565.3,NCBI RefSeq,NCBI Dermochelys coriacea Annotation Release 101,0.9820856,True,27794,Dermochelys coriacea,dermochelys_coriacea,dermochelys_coriacea,exact
+Amphibia,Discoglossus pictus,8351,GCA_027410445.1,Vertebrate Genome Laboratory,GCA_027410445.1-GB_2025_08_16,,False,8351,Discoglossus pictus,discoglossus_pictus,,
+Amphibia,Eleutherodactylus coqui,57060,GCF_035609145.1,NCBI RefSeq,GCF_035609145.1-RS_2024_07,0.9463277,True,57060,Eleutherodactylus coqui,eleutherodactylus_coqui,,
+Lepidosauria,Elgaria multicarinata webbii,159646,GCF_023053635.1,NCBI RefSeq,GCF_023053635.1-RS_2024_02,0.9820856,True,71008,Elgaria multicarinata,elgaria_multicarinata,elgaria_multicarinata,exact
+Testudines,Emydura macquarii macquarii,1129001,GCF_026122565.2,NCBI RefSeq,GCF_026122565.2-RS_2024_08,0.98743314,True,90392,Emydura macquarii,emydura_macquarii,emydura_macquarii,exact
+Testudines,Emys orbicularis,82168,GCF_028017835.1,NCBI RefSeq,GCF_028017835.1-RS_2024_05,0.99278075,True,82168,Emys orbicularis,emys_orbicularis,emys_orbicularis,exact
+Amphibia,Engystomops pustulosus,76066,GCF_040894005.1,NCBI RefSeq,GCF_040894005.1-RS_2025_03,0.94613934,True,76066,Engystomops pustulosus,engystomops_pustulosus,,
+Testudines,Eretmochelys imbricata,27787,GCF_965152235.1,NCBI RefSeq,GCF_965152235.1-RS_2025_12,0.984492,True,27787,Eretmochelys imbricata,eretmochelys_imbricata,,
+Lepidosauria,Erythrolamprus reginae,121349,GCF_031021105.1,NCBI RefSeq,GCF_031021105.1-RS_2024_12,0.93877006,True,121349,Erythrolamprus reginae,erythrolamprus_reginae,,
+Lepidosauria,Eublepharis macularius,481883,GCF_028583425.1,NCBI RefSeq,GCF_028583425.1-RS_2023_03,0.9824866,True,481883,Eublepharis macularius,eublepharis_macularius,eublepharis_macularius,exact
+Lepidosauria,Euleptes europaea,460621,GCF_029931775.1,NCBI RefSeq,GCF_029931775.1-RS_2023_06,0.97566843,True,460621,Euleptes europaea,euleptes_europaea,,
+Amphibia,Fejervarya limnocharis,110108,GCA_054083975.1,Vertebrate Genome Laboratory,GCA_054083975.1-GB_2026_07_15,,False,110108,Fejervarya limnocharis,fejervarya_limnocharis,,
+Lepidosauria,Furcifer pardalis,187939,GCA_030440675.1,Vertebrate Genome Laboratory,GCA_030440675.1-GB_2025_09_23,,False,187939,Furcifer pardalis,furcifer_pardalis,furcifer_pardalis,exact
+Amphibia,Gastrophryne carolinensis,8429,GCA_027917425.1,Vertebrate Genome Laboratory,GCA_027917425.1-GB_2025_10_08,,False,8429,Gastrophryne carolinensis,gastrophryne_carolinensis,gastrophryne_carolinensis,exact
+Crocodylia,Gavialis gangeticus,94835,GCF_001723915.1,NCBI RefSeq,NCBI Gavialis gangeticus Annotation Release 100,0.9606952,True,94835,Gavialis gangeticus,gavialis_gangeticus,gavialis_gangeticus,exact
+Lepidosauria,Gekko japonicus,146911,GCF_001447785.1,NCBI RefSeq,NCBI Gekko japonicus Annotation Release 100,0.93248665,True,146911,Gekko japonicus,gekko_japonicus,,
+Lepidosauria,Gekko kuhli,1118402,GCA_051903775.2,Milwaukee Public Museum,Annotation submitted by Milwaukee Public Museum,,False,1118402,Gekko kuhli,gekko_kuhli,,
+Amphibia,Geotrypetes seraphini,260995,GCF_902459505.2,NCBI RefSeq,GCF_902459505.2-RS_2026_03,0.95800376,True,260995,Geotrypetes seraphini,geotrypetes_seraphini,,
+Testudines,Gopherus evgoodei,1825980,GCF_007399415.2,NCBI RefSeq,NCBI Gopherus evgoodei Annotation Release 100,0.9894385,True,1825980,Gopherus evgoodei,gopherus_evgoodei,,
+Testudines,Gopherus flavomarginatus,286002,GCF_025201925.1,NCBI RefSeq,GCF_025201925.1-RS_2023_02,0.9846257,True,286002,Gopherus flavomarginatus,gopherus_flavomarginatus,,
+Lepidosauria,Heloderma suspectum,8554,GCF_057233095.1,NCBI RefSeq,GCF_057233095.1-RS_2026_06,0.97526735,True,8554,Heloderma suspectum,heloderma_suspectum,heloderma_suspectum,exact
+Lepidosauria,Hemicordylus capensis,884348,GCF_027244095.1,NCBI RefSeq,GCF_027244095.1-RS_2023_02,0.9800802,True,884348,Hemicordylus capensis,hemicordylus_capensis,,
+Lepidosauria,Heteronotia binoei,13085,GCF_032191835.1,NCBI RefSeq,GCF_032191835.1-RS_2023_10,0.9762032,True,13085,Heteronotia binoei,heteronotia_binoei,heteronotia_binoei,exact
+human,Homo sapiens,9606,GCF_000001405.40,NCBI RefSeq,GCF_000001405.40-RS_2025_08,0.98867923,True,9606,Homo sapiens,homo_sapiens,,
+Amphibia,Hyla sarda,327740,GCF_029499605.1,NCBI RefSeq,GCF_029499605.1-RS_2023_05,0.9455744,True,327740,Hyla sarda,hyla_sarda,,
+Amphibia,Hymenochirus boettgeri,247094,GCA_019447015.1,"University of California, Berkeley","Annotation submitted by University of California, Berkeley",,False,247094,Hymenochirus boettgeri,hymenochirus_boettgeri,,
+Amphibia,Hyperolius riggenbachi,752182,GCF_040937935.1,NCBI RefSeq,GCF_040937935.1-RS_2024_08,0.93804145,True,752182,Hyperolius riggenbachi,hyperolius_riggenbachi,,
+Lepidosauria,Lacerta agilis,80427,GCF_009819535.1,NCBI RefSeq,NCBI Lacerta agilis Annotation Release 100,0.9758021,True,80427,Lacerta agilis,lacerta_agilis,,
+outgroup,Latimeria chalumnae,7897,GCF_037176945.1,NCBI RefSeq,GCF_037176945.1-RS_2024_04,0.9883721,True,7897,Latimeria chalumnae,latimeria_chalumnae,,
+Testudines,Lepidochelys kempii,8472,GCF_965140285.1,NCBI RefSeq,GCF_965140285.1-RS_2026_01,0.98382354,True,8472,Lepidochelys kempii,lepidochelys_kempii,lepidochelys_kempii,exact
+Testudines,Lepidochelys olivacea,27788,GCF_965140295.1,Vertebrate Genome Laboratory,GCF_965140295.1-RS_2025_12,0.988369,True,27788,Lepidochelys olivacea,lepidochelys_olivacea,,
+Lepidosauria,Lepidodactylus lugubris,47724,GCA_052426315.1,GenBank submitter,GCA_052426315.1-GB_2025_09_07,,False,47724,Lepidodactylus lugubris,lepidodactylus_lugubris,,
+outgroup,Lepisosteus oculatus,7918,GCF_040954835.1,NCBI RefSeq,GCF_040954835.1-RS_2024_09,0.98846155,True,7918,Lepisosteus oculatus,lepisosteus_oculatus,,
+Amphibia,Leptodactylus fuscus,238119,GCF_031893055.1,NCBI RefSeq,GCF_031893055.1-RS_2025_07,0.94048965,True,238119,Leptodactylus fuscus,leptodactylus_fuscus,,
+Lepidosauria,Lerista edwardsae,470340,GCA_029204185.1,Harvard University,Annotation submitted by Harvard University,,False,470340,Lerista edwardsae,lerista_edwardsae,,
+Amphibia,Lissotriton helveticus,256425,GCF_964261635.1,NCBI RefSeq,GCF_964261635.1-RS_2025_12,0.9606403,True,256425,Lissotriton helveticus,lissotriton_helveticus,,
+Amphibia,Lissotriton vulgaris,8324,GCF_964263255.1,NCBI RefSeq,GCF_964263255.1-RS_2026_07,0.9493409,True,8324,Lissotriton vulgaris,lissotriton_vulgaris,lissotriton_vulgaris,exact
+Testudines,Malaclemys terrapin pileata,2991368,GCF_027887155.1,NCBI RefSeq,GCF_027887155.1-RS_2023_03,0.9914439,True,8485,Malaclemys terrapin,malaclemys_terrapin,,
+Amphibia,Mantella aurantiaca,43514,GCA_048565345.1,Vertebrate Genome Laboratory,GCA_048565345.1-GB_2025_10_17,,False,43514,Mantella aurantiaca,mantella_aurantiaca,mantella_aurantiaca,exact
+Testudines,Mauremys mutica,74926,GCF_020497125.1,NCBI RefSeq,NCBI Mauremys mutica Annotation Release 100,0.9931818,True,74926,Mauremys mutica,mauremys_mutica,mauremys_mutica,exact
+Testudines,Mauremys reevesii,260615,GCF_016161935.1,NCBI RefSeq,NCBI Mauremys reevesii Annotation Release 100,0.99157757,True,260615,Mauremys reevesii,mauremys_reevesii,mauremys_reevesii,exact
+Amphibia,Microcaecilia unicolor,1415580,GCF_901765095.2,NCBI RefSeq,GCF_901765095.2-RS_2026_02,0.9636535,True,1415580,Microcaecilia unicolor,microcaecilia_unicolor,,
+Amphibia,Mixophyes fleayi,3061075,GCF_038048845.1,NCBI RefSeq,GCF_038048845.1-RS_2025_07,0.9517891,True,3061075,Mixophyes fleayi,mixophyes_fleayi,mixophyes_fleayi,exact
+Testudines,Myuchelys georgesi,1041117,GCA_040894355.2,Vertebrate Genome Laboratory,GCA_040894355.2-GB_2025_09_23,,False,1041117,Myuchelys georgesi,myuchelys_georgesi,,
+Lepidosauria,Naja naja,35670,GCA_009733165.1,"Genentech Inc.,","Annotation submitted by Genentech Inc.,",,False,35670,Naja naja,naja_naja,naja_naja,exact
+Amphibia,Nanorana parkeri,125878,GCF_000935625.1,NCBI RefSeq,NCBI Nanorana parkeri Annotation Release 100,0.9299435,True,125878,Nanorana parkeri,nanorana_parkeri,,
+Testudines,Natator depressus,27790,GCF_965152275.1,NCBI RefSeq,GCF_965152275.1-RS_2025_07,0.98970586,True,27790,Natator depressus,natator_depressus,,
+Lepidosauria,Natrix helvetica,2025560,GCF_964273705.1,Vertebrate Genome Laboratory,GCF_964273705.1-RS_2025_09,0.9512032,True,2025560,Natrix helvetica,natrix_helvetica,,
+Amphibia,Neobatrachus aquilonius,51245,GCA_977016705.2,novikova lab,Annotation submitted by novikova lab,,False,51245,Neobatrachus aquilonius,neobatrachus_aquilonius,,
+Lepidosauria,Notechis scutatus,8663,GCF_049901735.1,NCBI RefSeq,GCF_049901735.1-RS_2026_08,0.94144386,True,8663,Notechis scutatus,notechis_scutatus,notechis_scutatus,exact
+Lepidosauria,Ophiophagus hannah,8665,GCA_981149525.1,Future Genomics Technologies B.V.,Annotation submitted by Future Genomics Technologies B.V.,,False,8665,Ophiophagus hannah,ophiophagus_hannah,,
+Lepidosauria,Pantherophis guttatus,94885,GCF_059756535.1,NCBI RefSeq,GCF_059756535.1-RS_2026_08,0.96283424,True,94885,Pantherophis guttatus,pantherophis_guttatus,elaphe_guttata,ncbi_synonym
+Lepidosauria,Paroedura picta,143630,GCF_049243985.1,NCBI RefSeq,GCF_049243985.1-RS_2025_09,0.9758021,True,143630,Paroedura picta,paroedura_picta,,
+Amphibia,Pelobates cultripes,61616,GCA_933207985.1,The Spanish National Research Council (CSIC),Annotation submitted by The Spanish National Research Council (CSIC),,False,61616,Pelobates cultripes,pelobates_cultripes,,
+Amphibia,Pelobates fuscus,191477,GCF_036172605.1,NCBI RefSeq,GCF_036172605.1-RS_2024_02,0.9655367,True,191477,Pelobates fuscus,pelobates_fuscus,pelobates_fuscus,exact
+Testudines,Pelodiscus sinensis,13735,GCF_049634645.1,NCBI RefSeq,GCF_049634645.1-RS_2025_08,0.9790107,True,13735,Pelodiscus sinensis,pelodiscus_sinensis,,
+Amphibia,Pelodytes ibericus,233781,GCA_036172795.1,Vertebrate Genome Laboratory,GCA_036172795.1-GB_2026_01_11,,False,233781,Pelodytes ibericus,pelodytes_ibericus,,
+Amphibia,Pelophylax lessonae,45623,GCF_965119305.1,Vertebrate Genome Laboratory,GCF_965119305.1-RS_2025_08,0.9566855,True,45623,Pelophylax lessonae,pelophylax_lessonae,pelophylax_lessonae,exact
+Lepidosauria,Phrynocephalus forsythii,171643,GCA_029282475.1,Lanzhou University,Annotation submitted by Lanzhou University,,False,171643,Phrynocephalus forsythii,phrynocephalus_forsythii,,
+Lepidosauria,Phrynosoma platyrhinos,52577,GCA_020142125.1,Miami University,Annotation submitted by Miami University,,False,52577,Phrynosoma platyrhinos,phrynosoma_platyrhinos,,
+Amphibia,Phyllobates terribilis,111132,GCF_046119375.1,NCBI RefSeq,GCF_046119375.1-RS_2025_04,0.94764596,True,111132,Phyllobates terribilis,phyllobates_terribilis,,
+Lepidosauria,Pituophis catenifer annectens,94852,GCF_029215685.1,NCBI RefSeq,GCF_029215685.1-RS_2025_01,0.89799464,True,94850,Pituophis catenifer,pituophis_catenifer,pituophis_catenifer,exact
+Amphibia,Pleurodeles waltl,8319,GCF_031143425.1,NCBI RefSeq,GCF_031143425.1-RS_2024_08,0.95009416,True,8319,Pleurodeles waltl,pleurodeles_waltl,pleurodeles_waltl,exact
+Lepidosauria,Podarcis bocagei,90520,GCF_964188305.1,Vertebrate Genome Laboratory,GCF_964188305.1-RS_2025_12,0.961631,True,90520,Podarcis bocagei,podarcis_bocagei,,
+Lepidosauria,Podarcis cretensis,1330250,GCF_951804945.1,Vertebrate Genome Laboratory,GCF_951804945.1-RS_2025_12,0.97687167,True,1330250,Podarcis cretensis,podarcis_cretensis,,
+Lepidosauria,Podarcis erhardii,140042,GCF_964252035.2,Vertebrate Genome Laboratory,GCF_964252035.2-RS_2025_12,0.95106953,True,140042,Podarcis erhardii,podarcis_erhardii,,
+Lepidosauria,Podarcis filfolensis,65481,GCF_964270895.1,Vertebrate Genome Laboratory,GCF_964270895.1-RS_2025_10,0.97419786,True,65481,Podarcis filfolensis,podarcis_filfolensis,,
+Lepidosauria,Podarcis gaigeae,90521,GCF_964106915.1,Vertebrate Genome Laboratory,GCF_964106915.1-RS_2025_11,0.976738,True,90521,Podarcis gaigeae,podarcis_gaigeae,,
+Lepidosauria,Podarcis lilfordi,74358,GCA_947686815.1,UB (Universitat de Barcelona),Annotation submitted by UB (Universitat de Barcelona),,False,74358,Podarcis lilfordi,podarcis_lilfordi,,
+Lepidosauria,Podarcis liolepis,662736,GCF_965112155.1,Vertebrate Genome Laboratory,GCF_965112155.1-RS_2025_10,0.9737968,True,662736,Podarcis liolepis,podarcis_liolepis,,
+Lepidosauria,Podarcis melisellensis,65482,GCF_964234715.1,Vertebrate Genome Laboratory,GCF_964234715.1-RS_2025_12,0.9763369,True,65482,Podarcis melisellensis,podarcis_melisellensis,,
+Lepidosauria,Podarcis muralis,64176,GCF_964188315.1,NCBI RefSeq,GCF_964188315.1-RS_2025_12,0.976738,True,64176,Podarcis muralis,podarcis_muralis,podarcis_muralis,exact
+Lepidosauria,Podarcis pityusensis,74359,GCF_964106645.2,Vertebrate Genome Laboratory,GCF_964106645.2-RS_2025_12,0.9723262,True,74359,Podarcis pityusensis,podarcis_pityusensis,,
+Lepidosauria,Podarcis raffonei,65483,GCF_027172205.1,NCBI RefSeq,GCF_027172205.1-RS_2023_02,0.98074865,True,65483,Podarcis raffonei,podarcis_raffonei,,
+Lepidosauria,Podarcis tiliguerta,65485,GCF_965153285.1,Vertebrate Genome Laboratory,GCF_965153285.1-RS_2025_10,0.975,True,65485,Podarcis tiliguerta,podarcis_tiliguerta,,
+Lepidosauria,Podarcis vaucheri,140051,GCF_965113315.1,Vertebrate Genome Laboratory,GCF_965113315.1-RS_2025_12,0.97713906,True,140051,Podarcis vaucheri,podarcis_vaucheri,,
+Testudines,Podocnemis expansa,44507,GCA_045364815.1,Vertebrate Genome Laboratory,GCA_045364815.1-GB_2026_02_17,,False,44507,Podocnemis expansa,podocnemis_expansa,podocnemis_expansa,exact
+Lepidosauria,Pogona vitticeps,103695,GCF_051106095.1,NCBI RefSeq,GCF_051106095.1-RS_2025_12,0.9803476,True,103695,Pogona vitticeps,pogona_vitticeps,,
+Amphibia,Pristimantis euphronides,448649,GCA_965278355.2,"Saint George's University, School of Veterinary Medicine, Department of Pathobiology, Next Generation Sequencing Laboratory","Annotation submitted by Saint George's University, School of Veterinary Medicine, Department of Pathobiology, Next Generation Sequencing Laboratory",,False,448649,Pristimantis euphronides,pristimantis_euphronides,,
+Lepidosauria,Protobothrops mucrosquamatus,103944,GCF_001527695.2,NCBI RefSeq,NCBI Protobothrops mucrosquamatus Annotation Release 101,,True,103944,Protobothrops mucrosquamatus,protobothrops_mucrosquamatus,,
+Lepidosauria,Pseudonaja textilis,8673,GCF_049901715.1,NCBI RefSeq,GCF_049901715.1-RS_2026_08,0.9466578,True,8673,Pseudonaja textilis,pseudonaja_textilis,,
+Amphibia,Pseudophryne corroboree,495146,GCF_028390025.1,NCBI RefSeq,GCF_028390025.1-RS_2024_02,0.95329565,True,495146,Pseudophryne corroboree,pseudophryne_corroboree,,
+Lepidosauria,Python bivittatus,176946,GCF_059951505.1,NCBI RefSeq,GCF_059951505.1-RS_2026_09,0.9695187,True,176946,Python bivittatus,python_bivittatus,,
+Amphibia,Pyxicephalus adspersus,30357,GCF_032062135.1,NCBI RefSeq,GCF_032062135.1-RS_2025_03,0.9148776,True,30357,Pyxicephalus adspersus,pyxicephalus_adspersus,pyxicephalus_adspersus,exact
+Amphibia,Rana temporaria,8407,GCF_905171775.1,NCBI RefSeq,NCBI Rana temporaria Annotation Release 100,0.9523541,True,8407,Rana temporaria,rana_temporaria,rana_temporaria,exact
+Amphibia,Ranitomeya imitator,111125,GCF_032444005.1,NCBI RefSeq,GCF_032444005.1-RS_2024_10,0.95310736,True,111125,Ranitomeya imitator,ranitomeya_imitator,,
+Amphibia,Ranitomeya variabilis,490064,GCF_051348905.1,NCBI RefSeq,GCF_051348905.1-RS_2025_09,0.9546139,True,490064,Ranitomeya variabilis,ranitomeya_variabilis,,
+Amphibia,Rhinatrema bivittatum,194408,GCF_901001135.2,NCBI RefSeq,GCF_901001135.2-RS_2026_03,0.96120524,True,194408,Rhinatrema bivittatum,rhinatrema_bivittatum,,
+Lepidosauria,Rhineura floridana,261503,GCF_030035675.1,NCBI RefSeq,GCF_030035675.1-RS_2023_12,0.97473264,True,261503,Rhineura floridana,rhineura_floridana,,
+Amphibia,Rhinoderma darwinii,43563,GCF_050947455.1,NCBI RefSeq,GCF_050947455.1-RS_2025_07,0.9312618,True,43563,Rhinoderma darwinii,rhinoderma_darwinii,,
+Amphibia,Rhinophrynus dorsalis,43566,GCA_037306005.1,Vertebrate Genome Laboratory,GCA_037306005.1-GB_2025_10_08,,False,43566,Rhinophrynus dorsalis,rhinophrynus_dorsalis,,
+Lepidosauria,Rhinotyphlops lalandei,759953,GCA_057127545.1,Vertebrate Genome Laboratory,GCA_057127545.1-GB_2026_08_10,,False,759953,Rhinotyphlops lalandei,rhinotyphlops_lalandei,,
+Lepidosauria,Sceloporus undulatus,8520,GCF_019175285.1,NCBI RefSeq,NCBI Sceloporus undulatus Annotation Release 100,0.95040107,True,8520,Sceloporus undulatus,sceloporus_undulatus,,
+Lepidosauria,Shinisaurus crocodilurus,52224,GCA_021292165.1,Vertebrate Genome Laboratory,GCA_021292165.1-GB_2025_09_20,,False,52224,Shinisaurus crocodilurus,shinisaurus_crocodilurus,,
+Amphibia,Spea bombifrons,233779,GCF_027358695.1,NCBI RefSeq,GCF_027358695.1-RS_2023_03,0.9625235,True,233779,Spea bombifrons,spea_bombifrons,,
+Lepidosauria,Sphaerodactylus townsendi,933632,GCF_021028975.2,NCBI RefSeq,NCBI Sphaerodactylus townsendi Annotation Release 100,0.9221925,True,933632,Sphaerodactylus townsendi,sphaerodactylus_townsendi,,
+Amphibia,Taudactylus pleione,3041213,GCF_031769625.1,NCBI RefSeq,GCF_031769625.1-RS_2026_09,0.9566855,True,3041213,Taudactylus pleione,taudactylus_pleione,,
+Testudines,Terrapene triunguis,2587831,GCF_002925995.2,NCBI RefSeq,NCBI Terrapene carolina triunguis Annotation Release 102,0.9739305,True,2587831,Terrapene triunguis,terrapene_triunguis,,
+Lepidosauria,Thamnophis elegans,35005,GCF_009769535.1,NCBI RefSeq,NCBI Thamnophis elegans Annotation Release 100,0.93997324,True,35005,Thamnophis elegans,thamnophis_elegans,,
+Lepidosauria,Thamnophis sirtalis,35019,GCF_051295495.1,NCBI RefSeq,GCF_051295495.1-RS_2026_08,0.95721924,True,35019,Thamnophis sirtalis,thamnophis_sirtalis,thamnophis_sirtalis,exact
+Lepidosauria,Tiliqua scincoides,71010,GCF_035046505.1,NCBI RefSeq,GCF_035046505.1-RS_2024_07,0.94425136,True,71010,Tiliqua scincoides,tiliqua_scincoides,tiliqua_scincoides,exact
+Testudines,Trachemys scripta elegans,31138,GCF_013100865.1,NCBI RefSeq,NCBI Trachemys scripta elegans Annotation Release 100,0.97566843,True,34903,Trachemys scripta,trachemys_scripta,trachemys_scripta,exact
+Amphibia,Triturus cristatus,8323,GCF_964204655.1,NCBI RefSeq,GCF_964204655.1-RS_2026_06,0.95800376,True,8323,Triturus cristatus,triturus_cristatus,triturus_cristatus,exact
+Lepidosauria,Varanus komodoensis,61221,GCF_004798865.1,NCBI RefSeq,NCBI Varanus komodoensis Annotation Release 100,0.9606952,True,61221,Varanus komodoensis,varanus_komodoensis,,
+Lepidosauria,Vipera berus,31155,GCF_964194415.1,Vertebrate Genome Laboratory,GCF_964194415.1-RS_2025_08,0.9474599,True,31155,Vipera berus,vipera_berus,vipera_berus,exact
+Lepidosauria,Vipera latastei,246179,GCA_024294585.1,GenBank submitter,GCA_024294585.1-GB_2025_08_27,,False,246179,Vipera latastei,vipera_latastei,vipera_latastei,exact
+Lepidosauria,Vipera ursinii,103942,GCF_947247035.1,Vertebrate Genome Laboratory,GCF_947247035.1-RS_2025_08,0.94197863,True,103942,Vipera ursinii,vipera_ursinii,,
+Amphibia,Xenopus laevis,8355,GCF_017654675.1,NCBI RefSeq,NCBI Xenopus laevis Annotation Release 101,0.97495294,True,8355,Xenopus laevis,xenopus_laevis,xenopus_laevis,exact
+Amphibia,Xenopus petersii,288555,GCA_038501925.1,Vertebrate Genome Laboratory,GCA_038501925.1-GB_2026_04_23,,False,288555,Xenopus petersii,xenopus_petersii,,
+Amphibia,Xenopus tropicalis,8364,GCF_000004195.4,NCBI RefSeq,GCF_000004195.4-RS_2026_09,0.9685499,True,8364,Xenopus tropicalis,xenopus_tropicalis,,
+Lepidosauria,Zootoca vivipara,8524,GCF_965207765.1,NCBI RefSeq,GCF_965207765.1-RS_2026_09,0.97740644,True,8524,Zootoca vivipara,zootoca_vivipara,lacerta_vivipara,ncbi_synonym

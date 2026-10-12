@@ -1,0 +1,15 @@
+{
+  "genes":1755.0,
+  "C1_mean_observed_ddG":0.2946176234,
+  "C1_mean_alternative_ddG":0.6420966882,
+  "C1_fraction_genes_observed_below_alternatives":0.9726495726,
+  "C2_mean_abs_alt_buried":1.3602967198,
+  "C2_mean_abs_alt_exposed":0.5968001518,
+  "C2_fraction_genes_buried_gt_exposed":0.962962963,
+  "C3_helix_region_to_P":1.781763948,
+  "C3_helix_region_to_G":1.202861722,
+  "C3_helix_region_mean_alt":0.7785588292,
+  "C3_strand_region_to_P":1.704317632,
+  "C3_strand_region_to_G":1.4828454732,
+  "C3_strand_region_mean_alt":1.0041528386
+}

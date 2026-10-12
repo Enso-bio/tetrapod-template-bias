@@ -1,0 +1,94 @@
+{
+  "template": "ornithorhynchus_anatinus",
+  "role": "E5_template",
+  "post_hoc": false,
+  "n_species": 57,
+  "n_genes": 1552,
+  "n_genage": 188,
+  "P1_posthoc": {
+    "beta": 0.011377661916357987,
+    "se": 0.02417580023721891,
+    "ci95_low": -0.037091899254614105,
+    "ci95_high": 0.05984722308733008,
+    "p_wald": 0.6398062174699558,
+    "lambda": 0.9660344637171847,
+    "LRT": 0.22014731838888224,
+    "p_boot": 0.662,
+    "boot_exceed": 661,
+    "boot_B": 999,
+    "null_lambda": 0.9703863633193242,
+    "p_boot_mc_se": 0.014958475858188226
+  },
+  "P2_selfcontained_posthoc": {
+    "beta": 0.004030961152233455,
+    "se": 0.022828568797039674,
+    "ci95_low": -0.04173756360792752,
+    "ci95_high": 0.04979948591239443,
+    "p_wald": 0.8605025891775503,
+    "lambda": 0.9683273686104849,
+    "LRT": 0.029854534456063675,
+    "p_boot": 0.87,
+    "boot_exceed": 869,
+    "boot_B": 999,
+    "null_lambda": 0.9703863633193242,
+    "p_boot_mc_se": 0.010634848376916336
+  },
+  "P2_competitive_posthoc": {
+    "beta_genage": 0.004030961152233455,
+    "null_mean": 0.010039676731977835,
+    "null_sd": 0.01364690410682283,
+    "p_empirical_two_sided": 0.8091908091908092
+  },
+  "P1_posthoc_exclude_primates": {
+    "beta": 0.03805157370615349,
+    "se": 0.025652387264476512,
+    "ci95_low": -0.013793834896686043,
+    "ci95_high": 0.08989698230899301,
+    "p_wald": 0.1458175879347405,
+    "lambda": 0.9752972179141267
+  },
+  "P1_posthoc_exclude_human": {
+    "beta": 0.025743850197876554,
+    "se": 0.020820575140841874,
+    "ci95_low": -0.016016935011081805,
+    "ci95_high": 0.0675046354068349,
+    "p_wald": 0.22173835429550642,
+    "lambda": 0.9860498164263404
+  },
+  "by_order_mean_z": {
+    "Artiodactyla": -0.514,
+    "Carnivora": 0.132,
+    "Cetacea": 1.68,
+    "Chiroptera": 0.811,
+    "Cingulata": 2.376,
+    "Lagomorpha": -0.034,
+    "Perissodactyla": 0.108,
+    "Primates": -0.547,
+    "Proboscidea": 1.182,
+    "Rodentia": -0.336
+  },
+  "human_rank_of_57": 1,
+  "lowest_5_species": [
+    "homo_sapiens",
+    "ovis_aries",
+    "sciurus_vulgaris",
+    "macaca_mulatta",
+    "ictidomys_tridecemlineatus"
+  ],
+  "highest_5_species": [
+    "physeter_catodon",
+    "ursus_maritimus",
+    "pteropus_vampyrus",
+    "dasypus_novemcinctus",
+    "tursiops_truncatus"
+  ],
+  "corr_with_human_template": 0.5873018880455757,
+  "nearly_neutral_M_on_log10mass_posthoc": {
+    "beta": 0.13646286763301008,
+    "se": 0.1056077663737834,
+    "ci95_low": -0.07517982564318937,
+    "ci95_high": 0.3481055609092095,
+    "p_wald": 0.20170232093108903,
+    "lambda": 0.7546230967301766
+  }
+}

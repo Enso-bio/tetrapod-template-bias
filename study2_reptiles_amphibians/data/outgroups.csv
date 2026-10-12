@@ -1,0 +1,5 @@
+group,organism,taxon_id,accession,annotation_provider,annotation_name,busco_complete,is_refseq,species_taxid,species_name,binomial,anage_binomial,match_type,in_tree
+outgroup,Danio rerio,7955,GCF_052040795.2,NCBI RefSeq,GCF_052040795.2-RS_2026_08,0.99230766,True,7955,Danio rerio,danio_rerio,,,True
+human,Homo sapiens,9606,GCF_000001405.40,NCBI RefSeq,GCF_000001405.40-RS_2025_08,0.98867923,True,9606,Homo sapiens,homo_sapiens,,,True
+outgroup,Latimeria chalumnae,7897,GCF_037176945.1,NCBI RefSeq,GCF_037176945.1-RS_2024_04,0.9883721,True,7897,Latimeria chalumnae,latimeria_chalumnae,,,True
+outgroup,Lepisosteus oculatus,7918,GCF_040954835.1,NCBI RefSeq,GCF_040954835.1-RS_2024_09,0.98846155,True,7918,Lepisosteus oculatus,lepisosteus_oculatus,,,True

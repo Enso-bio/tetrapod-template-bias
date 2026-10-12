@@ -1,0 +1,18 @@
+{
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.5.3",
+  "pandas": "3.0.6",
+  "scipy": "1.18.1",
+  "biopython": "1.88",
+  "statsmodels": "0.15.0",
+  "matplotlib": "3.11.2",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "omegaconf": "2.3.1",
+  "requests": "2.34.2",
+  "iqtree": "2.4.0 (Windows binary, GitHub release)",
+  "thermompnn": "Kuhlman-Lab/ThermoMPNN main branch zip downloaded 2026-10-08, models/thermoMPNN_default.pt",
+  "ensembl_release": 116
+}

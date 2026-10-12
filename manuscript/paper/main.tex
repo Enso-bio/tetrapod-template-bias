@@ -1,0 +1,440 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{authblk}
+\usepackage{titlesec}
+\usepackage{ragged2e}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{placeins}
+
+\definecolor{accent}{RGB}{35,75,120}
+\titleformat{\section}{\large\bfseries\color{accent}}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.5em}{}
+\setlength{\parindent}{0.45cm}
+\setlength{\parskip}{0.15em}
+\setlength{\headheight}{14pt}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.15}
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+\captionsetup{font=small,labelfont=bf}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Structural templates, protein stability and tetrapod longevity}
+\fancyfoot[C]{\thepage}
+\hypersetup{pdftitle={The choice of structural template can create apparent links between predicted protein stability and longevity in tetrapods}}
+
+% Numbers and table bodies generated from the result files of each study (M = mammals, R = reptiles and amphibians)
+\input{generated/M_macros.tex}
+\input{generated/R_macros.tex}
+\input{generated/pct_macros.tex}
+\input{generated/methods_tables.tex}
+\newcommand{\ddG}{$\Delta\Delta G$}
+
+\title{\textbf{The choice of structural template can create apparent links between predicted protein stability and longevity in tetrapods}}
+\author{Enso Onill Torres Alegre\thanks{Corresponding author: \href{mailto:etorresa@nd.edu}{etorresa@nd.edu}}\ }
+\author{Diana E. Mora Jimenez}
+\affil{University of Notre Dame}
+\date{}
+
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+
+\begin{abstract}
+\noindent\textbf{Background.} Comparative studies increasingly score amino-acid variation across species with structure-based predictors applied to a single structural template, but whether the choice of template can itself create associations with a species trait has received little attention. We examined this in a concrete case: the proposal that long-lived species carry proteins predicted to be more stable, or, under nearly neutral theory, less stable. We tested it in two independent tetrapod radiations with contrasting physiology: placental mammals and ectothermic reptiles and amphibians, which include turtles with slow or negligible senescence.
+
+\noindent\textbf{Methods.} In two studies with analysis plans written before any protein data were retrieved, we reconstructed ancestral protein sequences (placental ancestor for \MNSpecies{} mammals and \MNGenes{} genes; tetrapod ancestor for \RNSpecies{} reptiles and amphibians and \RNGenes{} genes), threaded them onto AlphaFold backbones and predicted with ThermoMPNN the folding-stability effect (\ddG) of every amino-acid difference between the ancestor and each species. The mean predicted \ddG{} per difference was related to maximum recorded lifespan by phylogenetic generalized least squares adjusted for body mass, with bootstrap likelihood-ratio tests and competitive tests of human GenAge genes and their orthologs. We compared human, mouse, opossum and platypus backbones in mammals, the platypus test being specified in advance as confirmatory, and zebrafish, coelacanth and human backbones in reptiles and amphibians.
+
+\noindent\textbf{Results.} With the human backbone, primates, which are long-lived for their size, appeared least destabilized of all mammals, producing a weak apparent association with lifespan. In the pre-specified confirmatory test, the platypus backbone reduced the primate offset from \MEOffHum{} to \MEOffPla{} SD (difference \MEaEst{} SD; 95\% CI \MEaLo{} to \MEaHi), the opossum and platypus backbones gave almost identical species values ($r$~=~\MErOpPl), and no association with lifespan remained ($P$~=~\MEcP). A smaller primate offset persisted even when no step used the human sequence (\MSixOffMsa{} SD). In reptiles, a human backbone, though equidistant in time from all species, separated slowly evolving turtles and crocodilians from squamates and gave a nominal association that two closely concordant fish backbones ($r$~=~\RTplRCoel) did not reproduce; in post hoc analyses it was not supported by a bootstrap test ($P$~=~\RPHHuBootP) and halved after adjustment for divergence from the ancestor. The predictor itself captured site-level stability signal: observed amino-acid differences were less destabilizing than possible alternatives (\MCOneFrac\% and \RCOneFrac\% of genes) and buried sites more sensitive than exposed ones. In the primary analyses neither study detected an association with lifespan (mammals $\beta$~=~\MPOneBeta, bootstrap $P$~=~\MPOneP; reptiles and amphibians $\beta$~=~\RPOneBeta, $P$~=~\RPOneP), and human GenAge genes and their orthologs behaved like random background genes (competitive $P$~=~\MPTwoCompP{} and \RPTwoCompP). The confidence intervals remain compatible with moderate effects (per SD of the metric, \MPlatypusPctLo{} to \MPlatypusPctHi{} of maximum lifespan in mammals with an outgroup template and \RPrimaryPctLo{} to \RPrimaryPctHi{} in reptiles and amphibians).
+
+\noindent\textbf{Conclusions.} The structural template can create apparent associations between predicted protein stability and a species trait, through the proximity of the template species to part of the sample and through the greater compatibility of slowly evolving lineages with a given backbone. We propose four checks to detect this bias, shown here for one predictor applied to single-chain models. With these safeguards, we detect no robust association between longevity and the mean predicted effect on folding stability of amino-acid differences from a reconstructed ancestor, although moderate effects cannot be excluded.
+\end{abstract}
+
+\noindent\textbf{Keywords:} structural template; protein stability; comparative genomics; ageing; longevity; ThermoMPNN; AlphaFold; ancestral sequence reconstruction; phylogenetic comparative methods; tetrapods
+
+\section{Introduction}
+Maximum lifespan varies about 100-fold across mammals, and ectothermic tetrapods span an even wider range of ageing rates, including phylogenetically widespread negligible senescence \citep{Reinke2022} and the slow ageing of turtles \citep{daSilva2022}. Among the molecular mechanisms proposed for this variation is the maintenance of protein stability and integrity. Naked mole-rat proteins resist urea-induced unfolding better than mouse proteins \citep{Perez2009}, SIRT6 variants of long-lived rodents repair DNA more efficiently \citep{Tian2019}, and a comparative analysis of mammalian genomes concluded that human longevity-associated proteins are more stable than their orthologs in short-lived mammals \citep{Farre2021}.
+
+Molecular evolution offers a competing expectation. Large, long-lived species tend to have smaller effective population sizes, in which purifying selection is less efficient and slightly deleterious substitutions fix more often \citep{Ohta1973}; large mammals accumulate more radical substitutions in mitochondrial proteins \citep{Popadin2007}. If many slightly deleterious substitutions reduce folding stability, long-lived species could carry more destabilizing substitutions. This expectation depends on assumptions about effective population sizes and the distribution of substitution effects that we do not estimate here.
+
+Testing these predictions requires a stability measure that varies meaningfully between orthologs. AlphaFold models of orthologs are nearly identical and largely insensitive to point substitutions \citep{Buel2022,Pak2023}. We therefore predicted the effect of each amino-acid difference on folding free energy with ThermoMPNN \citep{Dieckhaus2024}, trained on mega-scale stability measurements \citep{Tsuboyama2023}, and measured differences from reconstructed ancestors rather than from a modern reference species. Predictors of this kind score the variants of every species on one backbone, usually the structure of a model or reference species, and whether that choice can itself create associations with a species trait has received little attention. In the course of the first study we found unexpectedly that it can, and we then tested this bias with a confirmatory analysis and examined it again in a second radiation. The paper therefore addresses two questions: whether the predicted folding stability of amino-acid differences from an ancestor is associated with longevity, and how the structural template can bias such comparative analyses and how the bias can be detected. We ran the analysis in two independent radiations, each under its own analysis plan: placental mammals, which are endotherms, and reptiles and amphibians, which are ectotherms. Figure~\ref{fig:overview} summarizes the design and the main findings.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=\textwidth]{figures/fig_overview.pdf}
+\caption{Overview of the study. (A) Design of the two comparative studies. (B) How the structural template can create an apparent association with longevity; the scatter plots are schematic and do not show data, whereas the primate offsets are those of the confirmatory test (Section~\ref{sec:mammaltemplates}). (C) The four checks proposed to detect this bias.}
+\label{fig:overview}
+\end{figure}
+
+\section{Methods}
+
+\subsection{Design and pre-specified plans}
+Both studies followed the same logic (Table~\ref{tab:design}). For each species and gene, we identified the amino-acid differences between a reconstructed ancestor and the extant protein and predicted their effect on folding stability on a single structural backbone; species-level summaries were then related to lifespan. Each study had an internal analysis plan written before protein, ortholog or structure data were retrieved, and dated amendments were recorded. Plans were hashed with SHA256 at each stage; the hashes show that their contents were not altered afterwards but do not independently certify when they were written, and neither plan was deposited in a public registry. In the mammal study, three operational amendments preceded all association tests, one analysis (an opossum template) was added after the primary results were known and is labelled post hoc, and one confirmatory amendment (E5, a platypus template) was specified before any of its data were retrieved. In the reptile and amphibian study, a single operational amendment preceded all tests; its design incorporated the lessons of the mammal study. Software versions, data releases with retrieval dates, genome assemblies and all fixed parameters are given in the Supplementary Methods (Tables~\ref{tab:software}--\ref{tab:assembliesR}).
+
+\begin{table}[tbp]
+\centering
+\caption{Design of the two studies.}
+\label{tab:design}
+\small
+\begin{tabularx}{\textwidth}{p{3.3cm}YY}
+\toprule
+ & Study 1: placental mammals & Study 2: reptiles and amphibians \\
+\midrule
+Species analysed & \MNSpecies{} placentals (10 orders) & \RNSpecies{} (\RNTurtles{} turtles, \RNCrocs{} crocodilians, \RNSquamates{} squamates, \RNAmphibians{} amphibians) \\
+Genomes and orthologs & Ensembl 116, Compara one-to-one & NCBI RefSeq, NCBI one-to-one orthologs \\
+Genes & \MNGenes{} (\MNGenAge{} GenAge) & \RNGenes{} (\RNGenAge{} GenAge) \\
+Alignment & Pairwise to human, anchored on human positions & MAFFT multiple alignment, anchored on the template \\
+Reference ancestor & Placental ancestor & Tetrapod ancestor (amphibians + amniotes) \\
+Phylogeny & Upham et al.\ MCC tree; 20 posterior trees & TimeTree 5 pairwise ages \\
+Primary template & Human AlphaFold model & Zebrafish AlphaFold model (equidistant from all tetrapods) \\
+Template checks & Mouse (pre-specified); opossum (post hoc); platypus (confirmatory); platypus without human anchoring (post hoc) & Coelacanth (all species); human (reptiles only) \\
+Body mass & AnAge & AnAge; AmphiBIO or ReptTraits if missing \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Species and phenotypes}
+Maximum recorded lifespan and adult mass came from AnAge \citep{deMagalhaes2024} (quality ``acceptable'' or ``high'', sample size other than ``tiny''), matched by binomial or by exact-binomial NCBI Taxonomy synonyms of the same taxon. Relative longevity (LQ) in mammals was lifespan divided by $4.88\,M^{0.153}$ \citep{deMagalhaes2007}. In Study~1, genomes were the Ensembl 116 mammal assemblies \citep{Dyer2025} matching AnAge and the dated tree of \citet{Upham2019}; eight placentals with early low-coverage assemblies failed the ortholog-coverage filters, leaving \MNSpecies{} species, with six marsupials and monotremes as outgroups. In Study~2, genomes were NCBI-annotated reference assemblies \citep{OLeary2024} of turtles, crocodilians, lepidosaurs and amphibians; missing masses were taken from AmphiBIO \citep{Oliveira2017} or ReptTraits \citep{Oskyrko2024}. Of \RNCandidates{} species with lifespan and mass, \RNSpecies{} passed the coverage filters; the others lacked a RefSeq annotation usable for orthology or, for the allotetraploid \emph{Xenopus laevis}, one-to-one orthologs. Divergence times among these species, zebrafish, spotted gar, coelacanth and human came from the TimeTree 5 API \citep{Kumar2022}; an average-linkage tree reproduced them exactly (root \RRootAge{} Ma). Lifespan and body mass of all species analysed are shown in Figure~\ref{fig:species} and listed, with their species-level metrics, in Tables~\ref{tab:speciesM} and \ref{tab:speciesR}.
+
+\subsection{Genes, alignments and ancestral reconstruction}
+Each study analysed human genes from GenAge \citep{deMagalhaes2024} and a background of 2,000 other genes taken in a fixed random order, with proteins of 50--1,000 residues and a full-length AlphaFold DB model \citep{Jumper2021,Varadi2024} identical to the template sequence (human in Study~1, zebrafish in Study~2). In Study~1, orthologs were aligned pairwise to the human protein (BLOSUM62, free end gaps) and anchored on human positions; in Study~2, all orthologs, three fishes and human were aligned with MAFFT \citep{Katoh2013} and columns were defined by the zebrafish residues. Eligible sites had pLDDT $\geq 70$ in the template model; species--gene pairs, genes and species were retained by coverage thresholds fixed in the plans ($\geq 80\%$ of eligible sites per pair, $\geq 60\%$ of species per gene with outgroups present, $\geq 70\%$ of genes per species). Ancestral states were inferred with IQ-TREE 2.4.0 \citep{Minh2020} under LG+G4 \citep{Le2008} on the fixed species topology, at the placental (Study~1) or tetrapod (Study~2) ancestor; mean posterior probabilities of the most probable state were 0.992 and \RAsrPost, and the ancestral node was verified independently in 60 random genes per study.
+
+\subsection{Stability prediction and metrics}
+ThermoMPNN predicts $\Delta\Delta G(a\rightarrow b)$ at site $i$ as $f_i(b)-f_i(a)$ from frozen ProteinMPNN embeddings of the backbone and full sequence. We threaded the maximum a posteriori ancestral sequence onto the template backbone and obtained $f_i$ for all sites in one pass; our vectorized implementation reproduced the original per-mutation code to within $10^{-6}$. Positive values are destabilizing. For species $s$ with residue $b$ at site $i$,
+\begin{equation}
+\Delta\Delta G_i(s) = f_i(b) - \sum_a P(\mathrm{anc}_i = a)\, f_i(a), \qquad K_i(s) = 1 - P(\mathrm{anc}_i = b).
+\end{equation}
+Positions in 10-residue windows with $\geq 5$ differences from the ancestor were masked as probable alignment or annotation errors (2.6\% of sites in Study~1; \RMaskPct\% in Study~2, where many such windows reflect true divergence). The primary metric was $M_s = \sum \Delta\Delta G/\sum K$, the mean predicted \ddG{} per amino-acid difference from the ancestor; secondary metrics were the net \ddG{} per site and the divergence per site, $R_s = \sum K/L$, the expected proportion of sites at which the species differs from the ancestor. A difference is the net outcome of all substitutions at a site along the lineage: a change followed by a reversal leaves no difference, and successive changes count once. $M_s$ and $R_s$ therefore describe net differences rather than every substitution that occurred; with at most about a tenth of the sites differing from the ancestor (mean $R_s$ \RRAmphibians{} in amphibians, the most divergent group), multiple changes at the same site should be uncommon. $M_s$ summarizes how a species' amino-acid differences from the ancestor are predicted to affect folding when each is evaluated singly, in the ancestral sequence context and on a fixed backbone. It is not a measurement of the stability of the extant proteins: effects are summed additively and epistasis is ignored. For double mutants, additive ThermoMPNN predictions perform comparably to non-additive models, but no current model captures epistasis well \citep{Dieckhaus2025}.
+
+\subsection{Statistical analysis}
+In each study, log$_{10}$ maximum lifespan was regressed on the standardized metric and log$_{10}$ adult mass by generalized least squares with Pagel's $\lambda$ estimated by maximum likelihood \citep{Pagel1999,Freckleton2002}, with likelihood-ratio tests calibrated by 999 parametric bootstrap simulations re-estimating $\lambda$. The two primary tests per study (each at $\alpha=0.025$) were P1 ($M_s$ over all genes) and P2 ($M_s$ over GenAge genes, also compared with 1,000 random background gene sets of equal size). Predictor sanity controls (C1--C3) and a positive control (divergence from the ancestor against lifespan, as a measure of the rate of protein evolution) were specified in advance. Sensitivity analyses are listed in Tables~\ref{tab:sensM} and \ref{tab:sensR}. In the mammal confirmatory amendment E5, all templates were evaluated on identical genes and sites. The primate offset $\Delta_T$ was the mean metric of primates minus that of other placentals, in SD, for template $T$. Three hypotheses were fixed with decision rules based on 1,000 bootstrap resamples of genes:
+\begin{itemize}[leftmargin=*,itemsep=0pt]
+\item H5a: $\Delta_\mathrm{human} - \Delta_\mathrm{platypus} < 0$;
+\item H5b: the two outgroup templates agree more with each other than with the human template;
+\item H5c: P1 with the platypus template gives no association (bootstrap $P \geq 0.025$ and 95\% CI including zero).
+\end{itemize} Per-gene tests were exploratory, with Benjamini--Hochberg correction \citep{Benjamini1995}. After all planned results were known, three post hoc exploratory analyses were specified in dated amendments before being computed (E6 in Study~1, E2 in Study~2; Supplementary Methods). They were a reanalysis of the mammal outgroup template with alignments and sites that did not depend on the human sequence, a follow-up of a nominal human-template association in reptiles, and a calibration of the per-gene tests by simulation under the null hypothesis.
+
+\section{Results}
+
+\subsection{The predictor captures site-level stability signal in both radiations}
+Amino-acid differences between the ancestor and extant species had lower predicted \ddG{} than the 19 possible alternatives at the same sites (mammals \MCOneObs{} vs \MCOneAlt{} kcal/mol, \MCOneFrac\% of genes; reptiles and amphibians \RCOneObs{} vs \RCOneAlt, \RCOneFrac\%), as expected under purifying selection. Alternatives were more destabilizing at buried than at exposed sites (\MCTwoBur{} vs \MCTwoExp; \RCTwoBur{} vs \RCTwoExp), and proline and glycine were the most destabilizing replacements in helices and strands (Figure~\ref{fig:controls}). These controls show that the predictor is informative at the level of sites; they do not show that differences in $M_s$ between species reflect differences in the stability of extant proteins, nor that the metric is sensitive enough to detect species-level effects of a given size. Species-level values were nevertheless highly reproducible across independent outgroup templates (Sections~\ref{sec:mammaltemplates} and \ref{sec:reptiletemplates}).
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=\textwidth]{figures/mammals/fig2_controls.pdf}\\[4pt]
+\includegraphics[width=\textwidth]{figures/ectotherms/fig2_controls.pdf}
+\caption{Predictor sanity controls in placental mammals (top; human template, placental ancestor) and in reptiles and amphibians (bottom; zebrafish template, tetrapod ancestor). C1, observed differences from the ancestor vs possible alternatives at the same sites; C2, buried vs exposed sites; C3, proline and glycine replacements in helical and extended regions.}
+\label{fig:controls}
+\end{figure}
+
+\subsection{No detectable association between predicted stability and lifespan}
+No association between mean predicted \ddG{} per difference and lifespan was detected in mammals ($\beta$~=~\MPOneBeta{} log$_{10}$ years per SD, 95\% CI \MPOneLo{} to \MPOneHi, bootstrap $P$~=~\MPOneP) or in reptiles and amphibians ($\beta$~=~\RPOneBeta, 95\% CI \RPOneLo{} to \RPOneHi, $P$~=~\RPOneP; Table~\ref{tab:primary}, Figure~\ref{fig:primary}). Expressed as change in maximum lifespan per SD of the metric, these intervals span \MPrimaryPctLo{} to \MPrimaryPctHi{} in mammals with the human template, \MPlatypusPctLo{} to \MPlatypusPctHi{} with the platypus template on common sites (\MOpossumPctLo{} to \MOpossumPctHi{} with the opossum template), and \RPrimaryPctLo{} to \RPrimaryPctHi{} in reptiles and amphibians; they exclude large effects but remain compatible with moderate ones. Human GenAge genes and their orthologs did not differ from random background sets in either study (empirical $P$~=~\MPTwoCompP{} and \RPTwoCompP; Figure~\ref{fig:competitive}). In reptiles and amphibians, no subset showed an association: reptiles only $P$~=~\RSReptilesOnlyP, squamates only $P$~=~\RSSquamatesOnlyP, amphibians only $P$~=~\RSAmphibiansOnlyP, turtles excluded $P$~=~\RSWithoutTurtlesP. Of the remaining sensitivity analyses in both studies, only ordinary least squares without phylogeny in mammals reached $P<0.05$ ($P$~=~\MOLSP; Tables~\ref{tab:sensM} and \ref{tab:sensR}, Figure~\ref{fig:sensitivity}).
+
+\begin{table}[tbp]
+\centering
+\caption{Primary and secondary tests in both studies. $\beta$ is the change in log$_{10}$ maximum lifespan per SD of the metric, adjusted for log$_{10}$ adult mass. $P$ values are parametric-bootstrap likelihood-ratio tests (999 replicates) unless marked.}
+\label{tab:primary}
+\small
+\begin{tabularx}{\textwidth}{Yrrrr}
+\toprule
+Test & $\beta$ & 95\% CI & $\lambda$ & $P$ \\
+\midrule
+\multicolumn{5}{l}{\textit{Study 1: placental mammals ($n = \MNSpecies$)}} \\
+\MPrimaryRows
+\midrule
+\multicolumn{5}{l}{\textit{Study 2: reptiles and amphibians ($n = \RNSpecies$)}} \\
+\RPrimaryRows
+\bottomrule
+\end{tabularx}
+\par\smallskip\raggedright\footnotesize $^{a}$Empirical two-sided $P$ against 1,000 random background gene sets of the same size. Opossum-template analyses were added after the primary results were known; platypus-template analyses follow a pre-specified confirmatory amendment and use the sites common to all three templates.
+\end{table}
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=0.7\textwidth]{figures/mammals/fig3_primary.pdf}\\[6pt]
+\includegraphics[width=0.7\textwidth]{figures/ectotherms/fig3_primary.pdf}
+\caption{Mean predicted \ddG{} per difference from the ancestor against relative longevity. Top, placental mammals (human template; primates in orange). Bottom, reptiles and amphibians by clade (zebrafish template; lifespan residual on mass shown for display). Insets report the primary PGLS results.}
+\label{fig:primary}
+\end{figure}
+
+\subsection{Template proximity drives an apparent association in mammals}
+\label{sec:mammaltemplates}
+With the human backbone, humans had the lowest mean \ddG{} per difference of all \MNSpecies{} mammals, followed by chimpanzee, gorilla and macaques; the primate mean lay 1.97 SD below that of other placentals (Figure~\ref{fig:primary}). Because primates are long-lived for their size, this produced a weak negative slope, which pre-specified sensitivity analyses exposed: excluding primates reversed its sign ($\beta$~=~\MExPrimBeta), excluding humans alone removed it ($\beta$~=~\MExHumBeta, $P$~=~\MExHumP), and a mouse backbone reduced it (\MMouseBetaHuman{} to \MMouseBetaMouse{} in 200 genes; Figure~\ref{fig:mouse}). After seeing these results we repeated the analysis with an opossum backbone, which is equidistant from all placentals: the slope became $\beta$~=~\MOpBeta{} (95\% CI \MOpLo{} to \MOpHi, $P$~=~\MOpP).
+
+We then specified, before retrieving any of its data, the confirmatory amendment E5 with a platypus backbone (Figure~\ref{fig:confirm}). On \MEGenes{} genes and identical sites, the primate offset was \MEOffHum{} SD with the human template, \MEOffOpo{} with the opossum and \MEOffPla{} with the platypus. The difference $\Delta_\mathrm{human} - \Delta_\mathrm{platypus}$ was \MEaEst{} SD (95\% CI \MEaLo{} to \MEaHi), that is, the primate offset was about two-thirds smaller with the platypus template (H5a confirmed). The two outgroup templates gave almost identical species values ($r$~=~\MErOpPl), whereas each agreed only moderately with the human template ($r$~=~\MErHuPl{} and \MErHuOp; H5b confirmed), and no association with lifespan was detected ($\beta$~=~\MEcBeta, 95\% CI \MEcLo{} to \MEcHi, $P$~=~\MEcP; H5c met).
+
+A smaller primate offset and the lowest value for humans persisted with both outgroup templates. Both outgroup analyses shared features that could favour humans: eligible sites were defined on the human model and alignments were anchored on human positions. In a post hoc analysis (amendment E6) we removed both. We realigned the orthologs of \MSixGenes{} of the \MSixGenesIn{} E5 genes with MAFFT, kept the columns of the platypus protein, defined eligible sites on the platypus model alone and reconstructed the placental ancestor again, so that no step used the human sequence or model as a reference. The primate offset was essentially unchanged: \MSixOffMsa{} SD (95\% CI \MSixOffMsaLo{} to \MSixOffMsaHi), against \MSixOffPla{} SD for the human-anchored platypus analysis on the same genes (difference \MSixDiffMsaPla, 95\% CI \MSixDiffMsaPlaLo{} to \MSixDiffMsaPlaHi). Species values were nearly identical ($r$~=~\MSixRPla). Humans were no longer the lowest: counting from the lowest value they ranked \MSixRankMsa{} of \MNSpecies{} (\MSixRankPla{} with the human-anchored analysis on these genes), and no association with lifespan was detected ($\beta$~=~\MSixBeta, 95\% CI \MSixLo{} to \MSixHi, $P$~=~\MSixP). Restricting the new analysis to sites that were also eligible in the human model changed the offset by only \MSixDiffHsMsa{} SD. Human anchoring therefore does not explain the residual primate offset. Whether it reflects a genuine property of primate proteins or another bias remains open.
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth]{figures/mammals/fig7_template_bias.pdf}\\[14pt]
+\includegraphics[width=\textwidth]{figures/mammals/fig8_confirmatory_E5.pdf}
+\caption{Template bias in mammals. Top, the same species and metric with the human backbone (pre-specified primary analysis) and with the opossum backbone (post hoc). Bottom, confirmatory amendment E5 on identical genes and sites: primate offset $\Delta_T$ with each template (95\% gene-bootstrap intervals; H5a) and agreement between the opossum and platypus templates (H5b).}
+\label{fig:confirm}
+\end{figure}
+
+\subsection{Equidistant in time may not be equidistant in sequence: templates in reptiles}
+\label{sec:reptiletemplates}
+In Study~2 the zebrafish template was chosen to be equidistant from all species. A second fish, the coelacanth, gave almost identical species values in \RTplGenes{} random genes ($r$~=~\RTplRCoel) and the same null result ($\beta$~=~\RTplBetaZf{} and \RTplBetaCoel). A human backbone is also equidistant in time from all reptiles, but within reptiles it separated slowly evolving turtles and crocodilians from faster-evolving squamates more sharply than the zebrafish backbone (Figure~\ref{fig:reptemplates}) and gave a nominal negative slope ($\beta$~=~\RTplRepHuBeta, analytic Wald $P$~=~\RTplRepHuP, with $\lambda$ estimated at \RTplRepHuLambda), against \RTplRepZfBeta{} ($P$~=~\RTplRepZfP) with zebrafish on the same genes. A $\lambda$ near zero does not by itself make an association spurious, so we examined this slope in post hoc analyses (amendment E2; Table~\ref{tab:posthocrep}). A parametric bootstrap likelihood-ratio test, which accounts for the uncertainty in $\lambda$, gave $P$~=~\RPHHuBootP. Among reptiles the human-template metric was strongly correlated with divergence from the ancestor ($r$~=~\RPHHuRRate, against \RPHZfRRate{} with zebrafish), and so was the difference between the two templates ($r$~=~\RPHDiffRRate). Adjusting for divergence halved the slope (\RPHHuRateBeta, $P$~=~\RPHHuRateP). With a clade covariate (turtles and crocodilians against squamates) the slope was similar (\RPHHuCladeBeta), but its standard error tripled (\RPHHuCladeSE; $P$~=~\RPHHuCladeP), because the metric itself largely separates the clades; these data cannot distinguish a lifespan effect from a clade effect. Within squamates the slope was \RPHHuSqBeta{} ($P$~=~\RPHHuSqP, $n$~=~\RPHHuSqN). Within turtles and crocodilians it was \RPHHuArchBeta{} ($P$~=~\RPHHuArchP, $n$~=~\RPHHuArchN; Wald test, not bootstrapped). By the criterion fixed in the amendment the result is therefore mixed: the slope lost nominal significance with the clade covariate and within squamates, but did not approach zero with the covariate and remained nominal within turtles and crocodilians. With the zebrafish template no analysis approached significance. We do not regard the human-template slope as evidence of a lifespan association. Its dependence on divergence fits a mechanism in which lineages that have changed less since the ancestor remain more compatible with a given backbone, so that a template equidistant in time can still favour slowly evolving clades.
+
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=\textwidth]{figures/ectotherms/figS1_templates.pdf}
+\caption{Templates in reptiles and amphibians (\RTplGenes{} random genes). Left, coelacanth vs zebrafish backbones for all species. Right, human vs zebrafish backbones for reptiles only.}
+\label{fig:reptemplates}
+\end{figure}
+
+\subsection{Clade patterns and secondary analyses}
+In mammals, divergence per site from the ancestor, the positive control, was lower in longer-lived species ($\beta$~=~\MRBeta, 95\% CI \MRLo{} to \MRHi, bootstrap $P$~=~\MRP), reproducing the known association between longevity and slower molecular evolution \citep{Nabholz2008}. In reptiles and amphibians the direction was the same but not significant ($\beta$~=~\RRBeta, $P$~=~\RRP); turtles and crocodilians had the lowest divergence (\RRTurtles{} and \RRCrocodilians{} expected differences per site, vs \RRSquamates{} in squamates and \RRAmphibians{} in amphibians), consistent with their slowly evolving genomes \citep{Shaffer2013,Green2014}. The largest clade difference in the stability metric was between amphibians and reptiles (+\RAmphOffset{} SD for amphibians), which does not follow lifespan, since amphibian lifespans lie between those of squamates and turtles; turtles differed only modestly from squamates (\RTurtSqOffset{} SD). The metric was not associated with body mass in either study (mammals $P$~=~\MNNP; reptiles and amphibians $P$~=~\RNNP), so the nearly neutral prediction was not supported either.
+
+Per-gene tests were exploratory. In mammals, one of \MGenesTested{} genes passed a false discovery rate of 5\% (NAT14, a background gene, in the direction opposite to the stability hypothesis); in reptiles and amphibians, none of \RGenesTested{} did (Figure~\ref{fig:pergene}). In Study~2, \RGenesNominal{} genes had nominal $P<0.05$ (\RGenesExpected{} expected), with \RGenesPos\% of slopes positive. A post hoc calibration (amendment E2) accounted for this excess. We simulated lifespans \RPHCalB{} times under the null model and repeated the same per-gene tests. A mean of \RPHCalMean{} genes then had $P<0.05$ (95\% interval \RPHCalLo--\RPHCalHi; false-positive rate \RPHCalFPR\%), so the observed number is compatible with no association (calibrated $P$~=~\RPHCalP; Figure~\ref{fig:calibration}). The average rate was inflated because many per-gene fits estimated $\lambda$ near zero (\RPHCalLambdaZeroPct\% below 0.05), and the interval was wide because all genes are tested against the same lifespans. With $\lambda$ fixed at the null-model value the tests were calibrated (null false-positive rate \RPHCalFixFPR\%), and \RPHCalFixObs{} genes were nominal (null mean \RPHCalFixMean, 95\% interval \RPHCalFixLo--\RPHCalFixHi). Against the simulated distributions, \RPHCalEmpGenes{} genes had empirical $P<0.05$, a number within that null range, and none passed the false discovery threshold.
+
+\FloatBarrier
+\section{Discussion}
+In two independent radiations, endothermic placental mammals and ectothermic reptiles and amphibians, we did not detect an association between longevity and the mean predicted effect of the amino-acid differences that species have accumulated relative to a reconstructed ancestor, and human GenAge genes and their orthologs behaved like random background genes. In both studies the predictor distinguished observed from possible amino-acid changes and buried from exposed sites, so the predictor is not uninformative. These controls do not, however, establish that it can resolve species-level differences in the stability of extant proteins, so the null results speak to the predicted effects of these differences rather than to measured stability.
+
+The confidence intervals limit, but do not exclude, an association. Per SD of the metric, they span \MPlatypusPctLo{} to \MPlatypusPctHi{} of maximum lifespan in mammals with an outgroup template and \RPrimaryPctLo{} to \RPrimaryPctHi{} in reptiles and amphibians, so moderate effects remain compatible with the data. For reference, the minimum effects detectable with 80\% power at the two-sided $\alpha = 0.025$ of the primary tests, computed as \PowerZ{} standard errors of $\beta$, were about \MOpDetectA\% (mammals, opossum template) and \RDetectA\% (reptiles and amphibians). Thousands of genes improve the precision of each species' estimate, but the comparative sample sizes remain \MNSpecies{} and \RNSpecies{} species. Effects confined to particular proteins or regulatory regions, and properties other than folding stability (activity, aggregation, turnover, modification), also remain open. Turtles, the clearest example of slow ageing among ectotherms \citep{daSilva2022}, did not show a distinctive folding-stability signature; their most distinctive molecular trait in our data was slow evolution.
+
+Folding stability of isolated chains is only one layer of proteostasis. Many protein complexes are conserved across animals \citep{Wan2015}, but orthology does not guarantee that every interaction is conserved, and conservation of interactions decreases with sequence divergence \citep{Lewis2012}; subunits are also often stabilized by assembly with their partners \citep{Yeh2024}. Our metric scores each protein as a monomer, so residues at interaction interfaces, which are usually solvent-exposed in monomer models, contribute little, and compensatory substitutions between interacting partners are invisible. Longevity-related adaptation could therefore act on interfaces, complex assembly or regulation without changing the mean folding effect of amino-acid differences. A natural extension is to separate differences at known or predicted interfaces from those in the structural core, using complex structures rather than monomers and without assuming that the human interactome applies unchanged to all species.
+
+The methodological findings may be the most broadly useful. Structure-based predictors evaluate amino-acid changes in the context of one backbone, and that backbone carries the imprint of the sequences it was predicted for. In mammals, a human backbone made primates, which are long-lived for their size, appear least destabilized, which mimicked support for the stability hypothesis. In reptiles, a human backbone, although equidistant in time, appeared to favour slowly evolving and long-lived turtles and crocodilians, and the metric it produced tracked divergence from the ancestor. \citet{Farre2021} compared FoldX energies of modelled human and rat proteins for 40 pairs and larger reference sets, with a different metric and design. Our results do not show that their conclusion is biased, but they indicate that comparisons of this kind should be checked for sensitivity to the structural template. We suggest four checks for comparative structure-based analyses:
+\begin{enumerate}[leftmargin=*,itemsep=0pt]
+\item measure amino-acid differences from a reconstructed ancestor, not from a modern reference species;
+\item use a template outside the clade analysed and confirm results with a second, unrelated outgroup template;
+\item test whether apparent associations follow the clade of the template species or slowly evolving lineages;
+\item test how much an association depends on contrasts between a few clades, for example with bootstrap tests, clade covariates or within-clade analyses, particularly when $\lambda$ is estimated near zero.
+\end{enumerate}
+
+\textbf{Limitations.} ThermoMPNN predictions for single mutations are noisy and were summed additively, ignoring epistasis, protein--protein interactions, oligomers, ligands and modifications \citep{Dieckhaus2025}; the metric was not validated against measured stability differences between species. Ancestors were reconstructed, with greater uncertainty at the tetrapod node. Study~1 used human-anchored pairwise alignments and human-defined eligible sites; a post hoc reanalysis without them did not change the residual primate offset, whose origin remains unexplained. Study~2 used multiple alignments but masked more sites, partly true divergence. Species were sampled by genome availability (\MNSpecies{} and \RNSpecies), few lineages are exceptionally long-lived, AnAge records only maximum lifespans, masses in Study~2 mix typical and maximum values, and environmental temperature, which may affect both stability and ageing in ectotherms, could not be adjusted because it was available for only \RTempCov\% of reptiles, below the pre-specified threshold. The follow-up of the human template in reptiles, the calibration of the per-gene tests and the human-independent mammal reanalysis were specified after the planned results were known and are exploratory; with \RSReptilesOnlyN{} reptiles in two main clades, a clade effect and a lifespan effect cannot be separated. The opossum analysis was post hoc; its main conclusion was confirmed under a confirmatory amendment, but neither plan was deposited in a public registry, and the plan hashes document content rather than timing.
+
+\section{Conclusion}
+In two independent tetrapod radiations, the choice of structural template was enough to create an apparent association between predicted protein stability and longevity. A template from within the sample favoured the clade of the template species, and a template equidistant in time still favoured slowly evolving lineages. Ancestral references, outgroup templates and explicit checks for clade and rate effects should therefore be standard in comparative structure-based studies. We demonstrated the bias for ThermoMPNN applied to single-chain models; whether other predictors are equally sensitive remains to be tested. With these safeguards, in the proteins and \MNSpecies{} + \RNSpecies{} species analysed, we detect no robust association between longevity and the mean predicted effect on folding stability of amino-acid differences from a reconstructed ancestor; moderate effects cannot be excluded.
+
+\section*{Declarations}
+\noindent\textbf{Data and code availability.} All code, both analysis plans with their dated amendments and SHA256 hashes, the provenance log of every download (URL, retrieval date and SHA256), the result tables and the generated inputs of this manuscript are available at \url{https://github.com/Enso-bio/tetrapod-template-bias}. Downloaded inputs and large intermediate files (alignments, ancestral reconstructions and ThermoMPNN energies) are regenerated by the scripts, and TimeTree divergence times are re-queried rather than redistributed. The plan hashes verify integrity; independent evidence of when the plans were written would require a public registry.
+
+\noindent\textbf{Funding.} This research received no specific funding.
+
+\noindent\textbf{Competing interests.} The authors declare no competing interests.
+
+\bibliographystyle{unsrtnat}
+\bibliography{references,extra_refs}
+
+\clearpage
+\appendix
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+\section*{Supplementary material}
+
+\subsection*{Supplementary Methods}
+The tables and values in this section were generated from the project files (recorded package versions, download logs and code) rather than typed by hand. Every download was logged with its URL, UTC retrieval time and the SHA256 of the stored file. Both studies ran in the same Python environment (\RunPlatform). Software and versions are listed in Table~\ref{tab:software}, and data sources with their retrieval dates in Table~\ref{tab:data}.
+
+\begin{table}[htbp]
+\centering
+\caption{Software and versions.}
+\label{tab:software}
+\small
+\begin{tabularx}{\textwidth}{p{4.2cm}p{4.4cm}Y}
+\toprule
+Software & Version & Use \\
+\midrule
+\SoftwareRows
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Data sources. Retrieval dates are UTC ranges over both studies; the Study column gives the studies that used each source.}
+\label{tab:data}
+\small
+\begin{tabularx}{\textwidth}{p{3.6cm}Yp{2.3cm}l}
+\toprule
+Source & Version or release & Retrieved & Study \\
+\midrule
+\DataRows
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\paragraph{Genes and orthologs.} In both studies the gene universe was restricted to human proteins of 50--1,000 residues. GenAge human genes were always included, and background genes were taken in a fixed random order (NumPy generator, seed 20261008 in Study~1 and 20261009 in Study~2) until 2,000 passed the template criteria. Study~1 used the \texttt{ortholog\_one2one} homologies of the Ensembl 116 Compara files and the protein listed for each homology. The human template was the AlphaFold DB model whose sequence was identical to that protein. Study~2 used the \texttt{Ortholog} pairs relative to human in the NCBI \texttt{gene\_orthologs} file. For each gene it took the MANE Select or RefSeq Select protein when annotated, and the longest RefSeq protein otherwise. Genes required exactly one zebrafish ortholog; the zebrafish template was the longest isoform identical in sequence to a UniProtKB entry with a full-length AlphaFold DB model. Genome assemblies and annotations are listed in Tables~\ref{tab:assembliesM} and \ref{tab:assembliesR}.
+
+\paragraph{Alignment and coverage.} In Study~1, each ortholog was aligned to the human protein with the Biopython \texttt{PairwiseAligner} in global mode with free end gaps. Scoring used BLOSUM62, gap opening $-10$ and extension $-0.5$, and the ortholog residue at each human position was retained. In Study~2, the orthologs, three fishes and human were aligned with MAFFT (\texttt{-{}-auto}, one thread), and the columns with a zebrafish residue were retained. The same pairwise settings were used to map residues onto the alternative templates (mouse, opossum, platypus, coelacanth and human). A species--gene pair was valid if $\geq 80\%$ of the eligible template sites (pLDDT $\geq 70$) were aligned. A gene was retained if it was valid in $\geq 60\%$ of the analysed species and also present in at least one of the six marsupial and monotreme outgroups (Study~1) or in $\geq 2$ of the 3 fishes (Study~2). Species were retained if they were valid in $\geq 70\%$ of the retained genes.
+
+\paragraph{Trees and ancestral reconstruction.} In Study~1 the node-dated MCC tree of \citet{Upham2019} was pruned to the analysed species and outgroups, and Nexus annotations were removed. In Study~2 the tree was the average-linkage (UPGMA) tree of TimeTree pairwise ages; its maximum deviation from the queried ages was below $10^{-12}$~Ma. For each gene the tree was pruned to the species present, and IQ-TREE was run as \texttt{-te} \emph{tree} \texttt{-m LG+G4 -asr -nt 1 -seed} \emph{seed}. The topology was fixed and the branch lengths were re-estimated. The ancestral node (placental or tetrapod ancestor) was the most recent common ancestor of the ingroup in the IQ-TREE output tree rooted on the outgroups. In 60 random genes per study this node was identified independently by re-rooting with Biopython, and all agreed. The maximum a posteriori ancestral sequence was threaded onto the template, and the full posterior distribution of ancestral states entered $\Delta\Delta G_i(s)$ and $K_i(s)$.
+
+\paragraph{Structural quantities and ThermoMPNN.} pLDDT values were read from the B-factor column of each AlphaFold model. Solvent accessibility was computed on the template model with the Biopython Shrake--Rupley algorithm \citep{Shrake1973} (100 points per atom, probe radius 1.4~\AA). It was normalised by the theoretical maximum accessibilities of \citet{Tien2013}, and sites with relative accessibility $<0.25$ were classified as buried. ThermoMPNN used the published default weights (file \texttt{thermoMPNN\_default.pt}, SHA256 \ThermoSHA) on frozen ProteinMPNN \texttt{v\_48\_020} embeddings. The model configuration was the published one: the embeddings of two ProteinMPNN layers were concatenated and passed through light attention and an output network with hidden layers of 64 and 32 units. The threaded sequence replaced the model sequence while the backbone coordinates were kept; selenocysteine was scored as cysteine. A single forward pass returned the 20-value energy vector $f_i$ for every site. On test proteins, the resulting $f_i(b)-f_i(a)$ matched the original per-mutation code to within $10^{-6}$~kcal/mol. The window mask excluded all positions of any 10-residue window containing $\geq 5$ differences between the species and the ancestor.
+
+\paragraph{Statistics.} The phylogenetic covariance $C$ was computed from the most recent common ancestor of the analysed species and scaled to a mean root-to-tip distance of 1. Pagel's $\lambda$ transformation was $V(\lambda) = \lambda C + (1-\lambda)\,\mathrm{diag}(C)$. Generalized least squares used the eigen-decomposition of the correlation matrix, so that each value of $\lambda$ required only a weighted least-squares fit. The profile likelihood of $\lambda$ was evaluated on a 41-point grid over $[0,1]$. It was then refined by bounded Brent optimisation (tolerance $10^{-4}$) between the neighbours of the best grid point, keeping the better of the two values. Confidence intervals and Wald tests used the $t$ distribution with $n-p$ degrees of freedom. For the bootstrap likelihood-ratio tests, 999 data sets were simulated under the fitted null model (coefficients, residual variance and $\lambda$). Both models were refitted to each data set with $\lambda$ re-estimated, and $P = (1 + \#\{\mathrm{LR}^* \geq \mathrm{LR}\})/(B+1)$. The competitive test recomputed the metric for 1,000 random sets of background genes of the same size as the GenAge set and refitted the PGLS model, re-estimating $\lambda$, for each set. The two-sided empirical $P$ was $(1 + \#\{|\beta^*| \geq |\beta_\mathrm{GenAge}|\})/1001$. The predictor was standardized to unit SD before fitting. Posterior-tree sensitivity in Study~1 used 20 trees evenly spaced among the 100 downloaded posterior trees. Each analysis used a seed derived from the study seed, and rerunning the metric and statistics steps reproduced all results exactly.
+
+\paragraph{Post hoc analyses.} These analyses were written into the analysis plans as dated amendments (E6 in Study~1, E2 in Study~2), and the plans were hashed before any of them was computed. In E6 the input genes were the \MSixGenesIn{} common genes of E5. For each gene the Compara one-to-one proteins of the \MNSpecies{} placentals and six outgroups, with human as one more species, were aligned with MAFFT (\texttt{-{}-auto}). The columns with a platypus residue were kept, and eligible sites were those with pLDDT $\geq 70$ in the platypus model. The coverage rules were those of the main analysis, with the gene filter applied to the \MNSpecies{} placentals and no refiltering of species; \MSixGenes{} genes were retained. The placental ancestor was reconstructed with the same IQ-TREE settings (mean posterior of the most probable state \MSixPost), threaded onto the platypus model and scored with ThermoMPNN and the same window mask. Primate offsets were compared with those of E5 on the same genes by 1,000 paired bootstrap resamples of genes (seed 20261070), and P1 was tested with 999 bootstrap simulations (seed 20261071). In E2(a), the species metrics of the template sensitivity analysis (\RTplGenes{} genes, \RSReptilesOnlyN{} reptiles) were used. They were analysed with bootstrap likelihood-ratio tests (999 simulations; seeds 20261080 and 20261081), with a clade covariate (turtles and crocodilians against squamates), within clades, and with adjustment for log$_{10}$ divergence from the ancestor over all genes (Table~\ref{tab:posthocrep}). In E2(b), the null model (log$_{10}$ lifespan on log$_{10}$ mass; $\lambda$~=~\RPHCalNullModelLambda) was fitted to the \RNSpecies{} species. \RPHCalB{} responses were simulated from it (seed 20261082), and every per-gene test was repeated on each with the same species, $\lambda$ estimated by maximum likelihood and the Wald test. A variant fixed $\lambda$ at the null-model value. Empirical per-gene $P$ values were $(1 + \#\{P^* \leq P\})/(B+1)$.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.49\textwidth]{figures/mammals/fig1_species.pdf}\hfill
+\includegraphics[width=0.49\textwidth]{figures/ectotherms/fig1_species.pdf}
+\caption{Species analysed: maximum recorded lifespan against adult mass. Left, placental mammals by LQ tertile. Right, reptiles and amphibians by clade.}
+\label{fig:species}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.49\textwidth]{figures/mammals/fig4_competitive.pdf}\hfill
+\includegraphics[width=0.49\textwidth]{figures/ectotherms/fig4_competitive.pdf}
+\caption{Competitive tests of human GenAge genes and their orthologs against 1,000 random background gene sets of equal size. Left, mammals; right, reptiles and amphibians.}
+\label{fig:competitive}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.66\textwidth]{figures/mammals/fig5_sensitivity.pdf}\\[6pt]
+\includegraphics[width=0.66\textwidth]{figures/ectotherms/fig5_sensitivity.pdf}
+\caption{Sensitivity analyses of P1. Top, mammals (last row: range over 20 posterior trees); bottom, reptiles and amphibians.}
+\label{fig:sensitivity}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.5\textwidth]{figures/mammals/figS1_mouse_template.pdf}
+\caption{Mammals: species-level metric with human and mouse backbones in 200 random genes (pre-specified template sensitivity).}
+\label{fig:mouse}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.49\textwidth]{figures/mammals/fig6_per_gene.pdf}\hfill
+\includegraphics[width=0.49\textwidth]{figures/ectotherms/fig6_per_gene.pdf}
+\caption{Exploratory per-gene tests. Left, mammals (rings: genes from a previous candidate panel); right, reptiles and amphibians.}
+\label{fig:pergene}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/ectotherms/figS3_pergene_calibration.pdf}
+\caption{Post hoc calibration of the per-gene tests in reptiles and amphibians (amendment E2). Distribution of the number of genes with $P<0.05$ in \RPHCalB{} data sets simulated under the null model, with $\lambda$ estimated per gene (left) or fixed at the null-model value (right). Orange line, observed number; dashed line, 5\% of the tests.}
+\label{fig:calibration}
+\end{figure}
+
+\begin{table}[htbp]
+\centering
+\caption{Sensitivity analyses of P1 in mammals (analytic Wald tests conditional on $\lambda$; diagnostics, not discovery tests).}
+\label{tab:sensM}
+\small
+\begin{tabularx}{\textwidth}{Yrrrrr}
+\toprule
+Analysis & $n$ & $\beta$ & 95\% CI & $\lambda$ & $P$ \\
+\midrule
+\MSensitivityRows
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Sensitivity analyses of P1 in reptiles and amphibians (analytic Wald tests conditional on $\lambda$).}
+\label{tab:sensR}
+\small
+\begin{tabularx}{\textwidth}{Yrrrrr}
+\toprule
+Analysis & $n$ & $\beta$ & 95\% CI & $\lambda$ & $P$ \\
+\midrule
+\RSensitivityRows
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Post hoc follow-up of the human-template association in reptiles (amendment E2; \RTplGenes{} genes, sites shared by the zebrafish, coelacanth and human templates). Wald tests conditional on $\lambda$ unless stated.}
+\label{tab:posthocrep}
+\small
+\begin{tabularx}{\textwidth}{Yrrrrr}
+\toprule
+Analysis & $n$ & $\beta$ & 95\% CI & $\lambda$ & $P$ \\
+\midrule
+\RPHTemplateRows
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}p{4.4cm}p{2.3cm}rrrcrrr@{}}
+\caption{Mammal species (names as in AnAge). Lifespan in years; mass in g; group, LQ tertile (S, I, L); $M_\mathrm{hum}$ and $M_\mathrm{opo}$, mean predicted \ddG{} per difference from the ancestor with human and opossum templates; $R$, expected proportion of sites differing from the placental ancestor.}\label{tab:speciesM}\\
+\toprule
+Species & Order & Lifespan & Mass & LQ & Group & $M_\mathrm{hum}$ & $M_\mathrm{opo}$ & $R$ \\
+\midrule
+\endfirsthead
+\toprule
+Species & Order & Lifespan & Mass & LQ & Group & $M_\mathrm{hum}$ & $M_\mathrm{opo}$ & $R$ \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\MSpeciesRows
+\end{longtable}
+
+\begin{longtable}{@{}p{4.6cm}p{2.4cm}rrlrr@{}}
+\caption{Reptile and amphibian species (names as in AnAge). Lifespan in years; mass in g and its source; $M$, mean predicted \ddG{} per difference from the ancestor (zebrafish template); $R$, expected proportion of sites differing from the tetrapod ancestor.}\label{tab:speciesR}\\
+\toprule
+Species & Clade & Lifespan & Mass & Source & $M$ & $R$ \\
+\midrule
+\endfirsthead
+\toprule
+Species & Clade & Lifespan & Mass & Source & $M$ & $R$ \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\RSpeciesRows
+\end{longtable}
+
+\begin{longtable}{@{}p{4.4cm}p{5.4cm}p{5.6cm}@{}}
+\caption{Study 1 genome assemblies (Ensembl 116). Species are named as in AnAge and Table~\ref{tab:speciesM}; the Ensembl genome is the one used, which for some species is a subspecies or a specific individual. Outgroups were used to root the trees and reconstruct the placental ancestor.}\label{tab:assembliesM}\\
+\toprule
+Species & Ensembl genome & Assembly \\
+\midrule
+\endfirsthead
+\toprule
+Species & Ensembl genome & Assembly \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\AssemblyRowsM
+\end{longtable}
+
+\begin{longtable}{@{}p{4.3cm}p{4.6cm}ll@{}}
+\caption{Study 2 genome assemblies and RefSeq annotations (NCBI Datasets). Species are named as in AnAge and Table~\ref{tab:speciesR}, followed by the NCBI organism of the genome used. The reference genomes are the three fishes used as outgroups and templates and the human genome used as the orthology reference and as an alternative template.}\label{tab:assembliesR}\\
+\toprule
+Species & Genome (NCBI organism) & Assembly & Annotation \\
+\midrule
+\endfirsthead
+\toprule
+Species & Genome (NCBI organism) & Assembly & Annotation \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\AssemblyRowsR
+\end{longtable}
+
+\end{document}

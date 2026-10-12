@@ -1,0 +1,22 @@
+{
+  "genes_used":200,
+  "species":57,
+  "site_ddG_correlation_human_vs_mouse_template":0.9102718596,
+  "species_M_correlation":0.7386525003,
+  "P1_like_human_template":{
+    "beta":-0.0240728114,
+    "se":0.0221137802,
+    "ci95_low":-0.0684082713,
+    "ci95_high":0.0202626484,
+    "p_wald":0.281169907,
+    "lambda":0.9748663924
+  },
+  "P1_like_mouse_template":{
+    "beta":-0.003976256,
+    "se":0.0220657441,
+    "ci95_low":-0.0482154093,
+    "ci95_high":0.0402628974,
+    "p_wald":0.8576697964,
+    "lambda":0.9723973644
+  }
+}

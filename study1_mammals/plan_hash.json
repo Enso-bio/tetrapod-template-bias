@@ -1,0 +1,30 @@
+[
+  {
+    "value": [
+      {
+        "file": "PLAN_ANALISIS.md",
+        "sha256": "1930dcdbc029dc1440e3b6ffbcba1b5685b266ea66115545a9ce21b7ff24c223",
+        "recorded_utc": "2026-10-08T21:11:58Z"
+      },
+      {
+        "file": "PLAN_ANALISIS.md",
+        "sha256": "cdcbfb0592f20ec91b6f07d8e1444cfeec8f52005a926e47b66e6e4c20cb9a54",
+        "recorded_utc": "2026-10-08T22:05:23Z",
+        "note": "with amendments E1-E3, immediately before running 07_stats.py"
+      }
+    ],
+    "Count": 2
+  },
+  {
+    "file": "PLAN_ANALISIS.md",
+    "sha256": "3a87ba9177a2dc707d2de362d4ccbeb38e7bdda81b02cd3967494e0b031cb102",
+    "recorded_utc": "2026-10-09T04:40:34Z",
+    "note": "with amendment E5 (confirmatory platypus template), before any platypus template data were downloaded"
+  },
+  {
+    "file": "PLAN_ANALISIS.md",
+    "sha256": "effc55267e91af43fec5c7ba5a12bb0f7788215a94125473afde2141d6c29534",
+    "recorded_utc": "2026-10-10T06:27:42Z",
+    "note": "with amendment E6 (post hoc: human-independent MSA with platypus template), before computing it"
+  }
+]

@@ -1,0 +1,101 @@
+{
+  "amendment": "E5 (confirmatory; plan hashed before platypus data retrieval)",
+  "n_common_genes": 1341,
+  "n_common_sites_total": 353109,
+  "n_species": 57,
+  "primate_offset_SD": {
+    "human": -1.9644683616649106,
+    "opossum": -0.7314484136779953,
+    "platypus": -0.6215988958220033
+  },
+  "H5a": {
+    "statistic": "Delta_human - Delta_platypus",
+    "estimate": -1.3428694658429072,
+    "ci95": [
+      -1.7965969756072668,
+      -1.035986710050931
+    ],
+    "confirmed": true
+  },
+  "H5b": {
+    "statistic": "r(opossum,platypus) - r(human,platypus)",
+    "estimate": 0.4245999355770791,
+    "ci95": [
+      0.3020422699819622,
+      0.5851232299207826
+    ],
+    "r_opossum_platypus": 0.9879595389040429,
+    "r_human_platypus": 0.5633596033269638,
+    "r_human_opossum": 0.6155410234035885,
+    "confirmed": true
+  },
+  "H5c": {
+    "beta": 0.010338909337026279,
+    "se": 0.024597096256694248,
+    "ci95_low": -0.03897529949758799,
+    "ci95_high": 0.059653118171640554,
+    "p_wald": 0.6759120004856666,
+    "lambda": 0.967744574894138,
+    "LRT": 0.18121344551030916,
+    "p_boot": 0.701,
+    "boot_exceed": 700,
+    "boot_B": 999,
+    "null_lambda": 0.9703863633193242,
+    "p_boot_mc_se": 0.014477534320456644,
+    "replicated_null": true
+  },
+  "descriptive": {
+    "P1_slopes_common_sites_wald": {
+      "human": {
+        "beta": -0.08054044285459237,
+        "se": 0.0546909963965904,
+        "ci95_low": -0.19018928878048408,
+        "ci95_high": 0.029108403071299346,
+        "p_wald": 0.14665171549626607,
+        "lambda": 0.9708273903079404
+      },
+      "opossum": {
+        "beta": 0.010047417288294457,
+        "se": 0.025499289948333066,
+        "ci95_low": -0.0410755809926204,
+        "ci95_high": 0.06117041556920931,
+        "p_wald": 0.6951125820927582,
+        "lambda": 0.9681697175898956
+      },
+      "platypus": {
+        "beta": 0.010338909337026279,
+        "se": 0.024597096256694248,
+        "ci95_low": -0.03897529949758799,
+        "ci95_high": 0.059653118171640554,
+        "p_wald": 0.6759120004856666,
+        "lambda": 0.967744574894138
+      }
+    },
+    "human_rank_of_57": {
+      "human": 1,
+      "opossum": 2,
+      "platypus": 1
+    },
+    "genage_competitive_platypus": {
+      "beta_genage": -0.0017700145241151544,
+      "null_mean": 0.008820324629749245,
+      "null_sd": 0.013409080396684444,
+      "n_genage": 162,
+      "p_empirical_two_sided": 0.906093906093906
+    },
+    "bootstrap_offset_ci95": {
+      "off_h": [
+        -1.994954613589908,
+        -1.91892283870912
+      ],
+      "off_o": [
+        -1.020563015235521,
+        -0.32219246428572895
+      ],
+      "off_p": [
+        -0.9385188284210214,
+        -0.14476173820307442
+      ]
+    }
+  }
+}

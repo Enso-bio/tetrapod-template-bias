@@ -1,0 +1,185 @@
+ensembl_name,display_name,taxon_id,assembly,assembly_level,peptide_compara,strain,binomial,exact_binomial,chosen_for_binomial,anage_eligible,tree_label,anage_binomial
+ailuropoda_melanoleuca,Giant panda,9646,ASM200744v2,primary_assembly,1,reference,ailuropoda_melanoleuca,True,True,True,Ailuropoda_melanoleuca_URSIDAE_CARNIVORA,ailuropoda_melanoleuca
+aotus_nancymaae,Ma's night monkey,37293,Anan_2.0,scaffold,1,,aotus_nancymaae,True,True,False,Aotus_nancymaae_AOTIDAE_PRIMATES,
+balaenoptera_musculus,Blue whale,9771,mBalMus1.v2,primary_assembly,1,,balaenoptera_musculus,True,True,True,Balaenoptera_musculus_BALAENOPTERIDAE_CETARTIODACTYLA,balaenoptera_musculus
+bison_bison_bison,American bison,43346,Bison_UMD1.0,primary_assembly,1,,bison_bison,False,True,True,Bison_bison_BOVIDAE_CETARTIODACTYLA,bison_bison
+bos_grunniens,Domestic yak,30521,LU_Bosgru_v3.0,primary_assembly,1,,bos_grunniens,True,True,True,Bos_grunniens_BOVIDAE_CETARTIODACTYLA,bos_grunniens
+bos_indicus_hybrid,Hybrid - Bos Indicus,30522,UOA_Brahman_1,primary_assembly,1,,bos_indicus,False,True,False,Bos_indicus_BOVIDAE_CETARTIODACTYLA,
+bos_mutus,Wild yak,72004,BosGru_v2.0,primary_assembly,1,,bos_mutus,True,True,False,Bos_mutus_BOVIDAE_CETARTIODACTYLA,
+bos_taurus,Cattle,9913,ARS-UCD2.0,primary_assembly,1,reference,bos_taurus,True,True,False,Bos_taurus_BOVIDAE_CETARTIODACTYLA,
+bos_taurus_gca963921495v1,Cattle - Norwegian Red (NRF),9913,NRF,primary_assembly,0,Norwegian Red (NRF),bos_taurus,False,False,False,Bos_taurus_BOVIDAE_CETARTIODACTYLA,
+bos_taurus_hybrid,Hybrid - Bos Taurus,30522,UOA_Angus_1,primary_assembly,0,,bos_taurus,False,False,False,Bos_taurus_BOVIDAE_CETARTIODACTYLA,
+bos_taurus_tuli,Cattle - Tuli,9913,UOA_Tuli_1,primary_assembly,0,tuli,bos_taurus,False,False,False,Bos_taurus_BOVIDAE_CETARTIODACTYLA,
+bos_taurus_wagyu,Cattle - Wagyu,9913,UOA_Wagyu_1,primary_assembly,0,wagyu,bos_taurus,False,False,False,Bos_taurus_BOVIDAE_CETARTIODACTYLA,
+callithrix_jacchus,White-tufted-ear marmoset,9483,mCalJac1.pat.X,primary_assembly,1,,callithrix_jacchus,True,True,True,Callithrix_jacchus_CALLITRICHIDAE_PRIMATES,callithrix_jacchus
+camelus_dromedarius,Arabian camel,9838,CamDro2,primary_assembly,1,,camelus_dromedarius,True,True,True,Camelus_dromedarius_CAMELIDAE_CETARTIODACTYLA,camelus_dromedarius
+canis_lupus_dingo,Dingo,286419,ASM325472v1,primary_assembly,1,,canis_lupus,False,True,True,Canis_lupus_CANIDAE_CARNIVORA,canis_lupus
+canis_lupus_familiaris,Dog,9615,ROS_Cfam_1.0,primary_assembly,1,reference,canis_lupus,False,False,True,Canis_lupus_CANIDAE_CARNIVORA,canis_lupus
+canis_lupus_familiarisbasenji,Dog - Basenji,9615,Basenji_breed-1.1,primary_assembly,0,basenji,canis_lupus,False,False,True,Canis_lupus_CANIDAE_CARNIVORA,canis_lupus
+canis_lupus_familiarisboxer,Dog - Boxer,9615,Dog10K_Boxer_Tasha,primary_assembly,0,boxer,canis_lupus,False,False,True,Canis_lupus_CANIDAE_CARNIVORA,canis_lupus
+canis_lupus_familiarisgreatdane,Dog - Great Dane,9615,UMICH_Zoey_3.1,primary_assembly,0,great_dane,canis_lupus,False,False,True,Canis_lupus_CANIDAE_CARNIVORA,canis_lupus
+canis_lupus_familiarisgsd,Dog - German Shepherd,9615,UU_Cfam_GSD_1.0,primary_assembly,0,german_shepherd,canis_lupus,False,False,True,Canis_lupus_CANIDAE_CARNIVORA,canis_lupus
+capra_hircus,Goat,9925,ARS1,chromosome,1,reference,capra_hircus,True,True,True,Capra_hircus_BOVIDAE_CETARTIODACTYLA,capra_hircus
+capra_hircus_blackbengal,Goat (black bengal),9925,CVASU_BBG_1.0,primary_assembly,0,black_bengal,capra_hircus,False,False,True,Capra_hircus_BOVIDAE_CETARTIODACTYLA,capra_hircus
+capra_hircus_gca015443085v1,Goat - Saanen Dairy,9925,Saanen_v1,primary_assembly,0,saanen_dairy,capra_hircus,False,False,True,Capra_hircus_BOVIDAE_CETARTIODACTYLA,capra_hircus
+capra_hircus_gca026652205v1,Goat - Xinong Saanen Dairy,9925,ASM2665220v1,primary_assembly,0,xinong_saanen_dairy,capra_hircus,False,False,True,Capra_hircus_BOVIDAE_CETARTIODACTYLA,capra_hircus
+carlito_syrichta,Tarsier,1868482,Tarsius_syrichta-2.0.1,scaffold,1,,carlito_syrichta,True,True,False,Tarsius_syrichta_TARSIIDAE_PRIMATES,
+castor_canadensis,American beaver,51338,C.can_genome_v1.0,primary_assembly,0,,castor_canadensis,True,True,True,Castor_canadensis_CASTORIDAE_RODENTIA,castor_canadensis
+catagonus_wagneri,Chacoan peccary,51154,CatWag_v2_BIUU_UCD,primary_assembly,1,,catagonus_wagneri,True,True,False,Catagonus_wagneri_TAYASSUIDAE_CETARTIODACTYLA,
+cavia_aperea,Brazilian guinea pig,37548,CavAp1.0,scaffold,0,,cavia_aperea,True,True,True,Cavia_aperea_CAVIIDAE_RODENTIA,cavia_aperea
+cavia_porcellus,Guinea Pig,10141,Cavpor3.0,scaffold,1,,cavia_porcellus,True,True,True,Cavia_porcellus_CAVIIDAE_RODENTIA,cavia_porcellus
+cebus_imitator,Panamanian white-faced capuchin,2715852,Cebus_imitator-1.0,scaffold,1,,cebus_imitator,True,True,False,,
+cercocebus_atys,Sooty mangabey,9531,Caty_1.0,scaffold,1,,cercocebus_atys,True,True,False,Cercocebus_atys_CERCOPITHECIDAE_PRIMATES,
+cervus_hanglu_yarkandensis,Yarkand deer,84702,CEY_v1,primary_assembly,1,,cervus_hanglu,False,True,False,,
+chinchilla_lanigera,Long-tailed chinchilla,34839,ChiLan1.0,scaffold,1,,chinchilla_lanigera,True,True,True,Chinchilla_lanigera_CHINCHILLIDAE_RODENTIA,chinchilla_lanigera
+chlorocebus_sabaeus,Vervet-AGM,60711,ChlSab1.1,chromosome,1,,chlorocebus_sabaeus,True,True,False,Chlorocebus_sabaeus_CERCOPITHECIDAE_PRIMATES,
+choloepus_hoffmanni,Sloth,9358,choHof1,genescaffold,1,,choloepus_hoffmanni,True,True,True,Choloepus_hoffmanni_MEGALONYCHIDAE_PILOSA,choloepus_hoffmanni
+colobus_angolensis_palliatus,Angola colobus,336983,Cang.pa_1.0,scaffold,0,,colobus_angolensis,False,True,True,Colobus_angolensis_CERCOPITHECIDAE_PRIMATES,colobus_angolensis
+cricetulus_griseus_chok1gshd,Chinese hamster CHOK1GS,10029,CHOK1GS_HDv1,scaffold,0,,cricetulus_griseus,False,True,False,,
+cricetulus_griseus_crigri,Chinese hamster CriGri,10029,CriGri_1.0,scaffold,0,,cricetulus_griseus,False,False,False,,
+cricetulus_griseus_picr,Chinese hamster PICR,10029,CriGri-PICRH-1.0,primary_assembly,1,17A/GY,cricetulus_griseus,False,False,False,,
+dasypus_novemcinctus,Armadillo,9361,Dasnov3.0,scaffold,1,,dasypus_novemcinctus,True,True,True,Dasypus_novemcinctus_DASYPODIDAE_CINGULATA,dasypus_novemcinctus
+delphinapterus_leucas,Beluga whale,9749,ASM228892v3,primary_assembly,1,,delphinapterus_leucas,True,True,True,Delphinapterus_leucas_MONODONTIDAE_CETARTIODACTYLA,delphinapterus_leucas
+dipodomys_ordii,Kangaroo rat,10020,Dord_2.0,scaffold,1,,dipodomys_ordii,True,True,True,Dipodomys_ordii_HETEROMYIDAE_RODENTIA,dipodomys_ordii
+echinops_telfairi,Lesser hedgehog tenrec,9371,TENREC,genescaffold,1,,echinops_telfairi,True,True,True,Echinops_telfairi_TENRECIDAE_AFROSORICIDA,echinops_telfairi
+equus_asinus,Donkey,9793,ASM1607732v2,primary_assembly,1,reference,equus_asinus,True,True,True,,equus_asinus
+equus_asinus_gca041296235v2,Donkey (EquAss-T2T_v2),9793,EquAss-T2T_v2,primary_assembly,0,D_3611,equus_asinus,False,False,True,,equus_asinus
+equus_caballus,Horse,9796,EquCab3.0,primary_assembly,1,thoroughbred,equus_caballus,True,True,True,Equus_caballus_EQUIDAE_PERISSODACTYLA,equus_caballus
+erinaceus_europaeus,Hedgehog,9365,eriEur1,genescaffold,1,,erinaceus_europaeus,True,True,True,Erinaceus_europaeus_ERINACEIDAE_EULIPOTYPHLA,erinaceus_europaeus
+felis_catus,Domestic cat,9685,F.catus_Fca126_mat1.0,primary_assembly,1,reference,felis_catus,True,True,False,Felis_catus_FELIDAE_CARNIVORA,
+felis_catus_abyssinian,Cat - Abyssinian,9685,Felis_catus_9.0,chromosome,0,,felis_catus,False,False,False,Felis_catus_FELIDAE_CARNIVORA,
+fukomys_damarensis,Damara mole rat,885580,DMR_v1.0,scaffold,0,,fukomys_damarensis,True,True,False,Fukomys_damarensis_BATHYERGIDAE_RODENTIA,
+gorilla_gorilla,Gorilla,9595,gorGor4,chromosome,1,,gorilla_gorilla,True,True,True,Gorilla_gorilla_HOMINIDAE_PRIMATES,gorilla_gorilla
+heterocephalus_glaber_female,Naked mole-rat female,10181,Naked_mole-rat_maternal,primary_assembly,1,reference,heterocephalus_glaber,False,True,True,Heterocephalus_glaber_HETEROCEPHALIDAE_RODENTIA,heterocephalus_glaber
+heterocephalus_glaber_male,Naked mole-rat male,10181,Naked_mole-rat_paternal,primary_assembly,0,reference,heterocephalus_glaber,False,False,True,Heterocephalus_glaber_HETEROCEPHALIDAE_RODENTIA,heterocephalus_glaber
+homo_sapiens,Human,9606,GRCh38.p14,chromosome,1,,homo_sapiens,True,True,True,Homo_sapiens_HOMINIDAE_PRIMATES,homo_sapiens
+ictidomys_tridecemlineatus,Squirrel,43179,SpeTri2.0,scaffold,1,,ictidomys_tridecemlineatus,True,True,True,Ictidomys_tridecemlineatus_SCIURIDAE_RODENTIA,ictidomys_tridecemlineatus
+jaculus_jaculus,Lesser Egyptian jerboa,51337,JacJac1.0,scaffold,1,,jaculus_jaculus,True,True,True,Jaculus_jaculus_DIPODIDAE_RODENTIA,jaculus_jaculus
+loxodonta_africana,Elephant,9785,Loxafr3.0,supercontig,1,,loxodonta_africana,True,True,True,Loxodonta_africana_ELEPHANTIDAE_PROBOSCIDEA,loxodonta_africana
+lynx_canadensis,Canada lynx,61383,mLynCan4_v1.p,primary_assembly,0,,lynx_canadensis,True,True,True,Lynx_canadensis_FELIDAE_CARNIVORA,lynx_canadensis
+macaca_fascicularis,Crab-eating macaque,9541,Macaca_fascicularis_6.0,primary_assembly,1,,macaca_fascicularis,True,True,True,Macaca_fascicularis_CERCOPITHECIDAE_PRIMATES,macaca_fascicularis
+macaca_mulatta,Macaque,9544,Mmul_10,primary_assembly,1,,macaca_mulatta,True,True,True,Macaca_mulatta_CERCOPITHECIDAE_PRIMATES,macaca_mulatta
+macaca_nemestrina,Pig-tailed macaque,9545,Mnem_1.0,scaffold,1,,macaca_nemestrina,True,True,True,Macaca_nemestrina_CERCOPITHECIDAE_PRIMATES,macaca_nemestrina
+mandrillus_leucophaeus,Drill,9568,Mleu.le_1.0,scaffold,1,,mandrillus_leucophaeus,True,True,True,Mandrillus_leucophaeus_CERCOPITHECIDAE_PRIMATES,mandrillus_leucophaeus
+marmota_marmota_marmota,Alpine marmot,9994,marMar2.1,primary_assembly,1,,marmota_marmota,False,True,True,Marmota_marmota_SCIURIDAE_RODENTIA,marmota_marmota
+meriones_unguiculatus,Mongolian gerbil,10047,MunDraft-v1.0,primary_assembly,0,,meriones_unguiculatus,True,True,True,Meriones_unguiculatus_MURIDAE_RODENTIA,meriones_unguiculatus
+mesocricetus_auratus,Golden Hamster,10036,MesAur1.0,scaffold,1,,mesocricetus_auratus,True,True,True,Mesocricetus_auratus_CRICETIDAE_RODENTIA,mesocricetus_auratus
+microcebus_murinus,Mouse Lemur,30608,Mmur_3.0,chromosome,1,,microcebus_murinus,True,True,True,Microcebus_murinus_CHEIROGALEIDAE_PRIMATES,microcebus_murinus
+microtus_ochrogaster,Prairie vole,79684,MicOch1.0,chromosome,1,,microtus_ochrogaster,True,True,True,Microtus_ochrogaster_CRICETIDAE_RODENTIA,microtus_ochrogaster
+monodelphis_domestica,Opossum,13616,ASM229v1,primary_assembly,1,,monodelphis_domestica,True,True,True,Monodelphis_domestica_DIDELPHIDAE_DIDELPHIMORPHIA,monodelphis_domestica
+monodon_monoceros,Narwhal,40151,NGI_Narwhal_1,primary_assembly,1,,monodon_monoceros,True,True,True,Monodon_monoceros_MONODONTIDAE_CETARTIODACTYLA,monodon_monoceros
+moschus_moschiferus,Siberian musk deer,68415,MosMos_v2_BIUU_UCD,primary_assembly,1,,moschus_moschiferus,True,True,False,Moschus_moschiferus_MOSCHIDAE_CETARTIODACTYLA,
+mus_caroli,Ryukyu mouse,10089,CAROLI_EIJ_v1.1,chromosome,1,CAROLI_EIJ,mus_caroli,True,True,False,Mus_caroli_MURIDAE_RODENTIA,
+mus_musculus,Mouse,10090,GRCm39,chromosome,1,reference (CL57BL6),mus_musculus,True,True,True,Mus_musculus_MURIDAE_RODENTIA,mus_musculus
+mus_musculus_129s1svimj,Mouse 129S1/SvImJ,10090,129S1_SvImJ_v3,primary_assembly,1,129S1/SvImJ,mus_musculus,False,False,True,Mus_musculus_MURIDAE_RODENTIA,mus_musculus
+mus_musculus_aj,Mouse A/J,10090,A_J_v3,primary_assembly,1,A/J,mus_musculus,False,False,True,Mus_musculus_MURIDAE_RODENTIA,mus_musculus
+mus_musculus_akrj,Mouse AKR/J,10090,AKR_J_v3,primary_assembly,1,AKR/J,mus_musculus,False,False,True,Mus_musculus_MURIDAE_RODENTIA,mus_musculus
+mus_musculus_balbcj,Mouse BALB/cJ,10090,BALB_cJ_v3,primary_assembly,1,BALB/cJ,mus_musculus,False,False,True,Mus_musculus_MURIDAE_RODENTIA,mus_musculus
+mus_musculus_c3hhej,Mouse C3H/HeJ,10090,C3H_HeJ_v3,primary_assembly,1,C3H/HeJ,mus_musculus,False,False,True,Mus_musculus_MURIDAE_RODENTIA,mus_musculus
+mus_musculus_c57bl6nj,Mouse C57BL/6NJ,10090,C57BL_6NJ_v3,primary_assembly,1,C57BL/6NJ,mus_musculus,False,False,True,Mus_musculus_MURIDAE_RODENTIA,mus_musculus
+mus_musculus_casteij,Mouse CAST/EiJ,10091,CAST_EiJ_v3,primary_assembly,1,CAST/EiJ,mus_musculus,False,False,True,Mus_musculus_MURIDAE_RODENTIA,mus_musculus
+mus_musculus_cbaj,Mouse CBA/J,10090,CBA_J_v3,primary_assembly,1,CBA/J,mus_musculus,False,False,True,Mus_musculus_MURIDAE_RODENTIA,mus_musculus
+mus_musculus_dba2j,Mouse DBA/2J,10090,DBA_2J_v3,primary_assembly,1,DBA/2J,mus_musculus,False,False,True,Mus_musculus_MURIDAE_RODENTIA,mus_musculus
+mus_musculus_fvbnj,Mouse FVB/NJ,10090,FVB_NJ_v3,primary_assembly,1,FVB/NJ,mus_musculus,False,False,True,Mus_musculus_MURIDAE_RODENTIA,mus_musculus
+mus_musculus_lpj,Mouse LP/J,10090,LP_J_v3,primary_assembly,1,LP/J,mus_musculus,False,False,True,Mus_musculus_MURIDAE_RODENTIA,mus_musculus
+mus_musculus_molossinusjf1msj,Mouse JF1/MsJ,57486,JF1_MsJ_v3,primary_assembly,1,JF1/MsJ,mus_musculus,False,False,True,Mus_musculus_MURIDAE_RODENTIA,mus_musculus
+mus_musculus_nodshiltj,Mouse NOD/ShiLtJ,10090,NOD_ShiLtJ_v3,primary_assembly,1,NOD/ShiLtJ,mus_musculus,False,False,True,Mus_musculus_MURIDAE_RODENTIA,mus_musculus
+mus_musculus_nzohlltj,Mouse NZO/HlLtJ,10090,NZO_HlLtJ_v3,primary_assembly,1,NZO/HlLtJ,mus_musculus,False,False,True,Mus_musculus_MURIDAE_RODENTIA,mus_musculus
+mus_musculus_pwkphj,Mouse PWK/PhJ,39442,PWK_PhJ_v3,primary_assembly,1,PWK/PhJ,mus_musculus,False,False,True,Mus_musculus_MURIDAE_RODENTIA,mus_musculus
+mus_musculus_wsbeij,Mouse WSB/EiJ,10092,WSB_EiJ_v3,primary_assembly,1,WSB/EiJ,mus_musculus,False,False,True,Mus_musculus_MURIDAE_RODENTIA,mus_musculus
+mus_pahari,Shrew mouse,10093,PAHARI_EIJ_v1.1,chromosome,1,PAHARI_EIJ,mus_pahari,True,True,False,Mus_pahari_MURIDAE_RODENTIA,
+mus_spicilegus,Steppe mouse,10103,MUSP714,primary_assembly,1,,mus_spicilegus,True,True,True,Mus_spicilegus_MURIDAE_RODENTIA,mus_spicilegus
+mus_spretus,Western wild mouse,10096,SPRET_EiJ_v3,primary_assembly,1,reference,mus_spretus,True,True,False,Mus_spretus_MURIDAE_RODENTIA,
+mustela_putorius_furo,Ferret,9669,MusPutFur1.0,scaffold,1,,mustela_putorius,False,True,True,Mustela_putorius_MUSTELIDAE_CARNIVORA,mustela_putorius
+myotis_lucifugus,Microbat,59463,Myoluc2.0,scaffold,1,,myotis_lucifugus,True,True,True,Myotis_lucifugus_VESPERTILIONIDAE_CHIROPTERA,myotis_lucifugus
+nannospalax_galili,Upper Galilee mountains blind mole rat,1026970,S.galili_v1.0,scaffold,1,,nannospalax_galili,True,True,False,,
+neovison_vison,American mink,452646,NNQGG.v01,primary_assembly,1,,neovison_vison,True,True,True,Neovison_vison_MUSTELIDAE_CARNIVORA,neovison_vison
+nomascus_leucogenys,Gibbon,61853,Nleu_3.0,chromosome,1,,nomascus_leucogenys,True,True,True,Nomascus_leucogenys_HYLOBATIDAE_PRIMATES,nomascus_leucogenys
+notamacropus_eugenii,Wallaby,9315,Meug_1.0,genescaffold,1,,notamacropus_eugenii,True,True,True,Macropus_eugenii_MACROPODIDAE_DIPROTODONTIA,macropus_eugenii
+ochotona_princeps,Pika,9978,OchPri2.0-Ens,genescaffold,1,,ochotona_princeps,True,True,True,Ochotona_princeps_OCHOTONIDAE_LAGOMORPHA,ochotona_princeps
+octodon_degus,Degu,10160,OctDeg1.0,scaffold,1,,octodon_degus,True,True,True,Octodon_degus_OCTODONTIDAE_RODENTIA,octodon_degus
+ornithorhynchus_anatinus,Platypus,9258,mOrnAna1.p.v1,primary_assembly,1,,ornithorhynchus_anatinus,True,True,True,Ornithorhynchus_anatinus_ORNITHORHYNCHIDAE_MONOTREMATA,ornithorhynchus_anatinus
+oryctolagus_cuniculus,Rabbit,9986,OryCun2.0,chromosome,1,,oryctolagus_cuniculus,True,True,True,Oryctolagus_cuniculus_LEPORIDAE_LAGOMORPHA,oryctolagus_cuniculus
+otolemur_garnettii,Bushbaby,30611,OtoGar3,scaffold,1,,otolemur_garnettii,True,True,True,Otolemur_garnettii_GALAGIDAE_PRIMATES,otolemur_garnettii
+ovis_aries,Sheep,9940,ARS-UI_Ramb_v3.0,primary_assembly,1,reference,ovis_aries,True,True,True,Ovis_aries_BOVIDAE_CETARTIODACTYLA,ovis_aries
+ovis_aries_gca011170295v1,Sheep - Hu,9940,ASM1117029v1,primary_assembly,0,hu,ovis_aries,False,False,True,Ovis_aries_BOVIDAE_CETARTIODACTYLA,ovis_aries
+ovis_aries_gca018804185v1,Sheep - East friesian,9940,NWAFU_Friesian_1.0,primary_assembly,0,east_friesian,ovis_aries,False,False,True,Ovis_aries_BOVIDAE_CETARTIODACTYLA,ovis_aries
+ovis_aries_gca022416685v1,Sheep - Qiaoke,9940,ASM2241668v1,primary_assembly,0,qiaoke,ovis_aries,False,False,True,Ovis_aries_BOVIDAE_CETARTIODACTYLA,ovis_aries
+ovis_aries_gca022416695v1,Sheep - White dorper,9940,ASM2241669v1,primary_assembly,0,white_dorper,ovis_aries,False,False,True,Ovis_aries_BOVIDAE_CETARTIODACTYLA,ovis_aries
+ovis_aries_gca022416755v1,Sheep - Ujimqin,9940,ASM2241675v1,primary_assembly,0,ujimqin,ovis_aries,False,False,True,Ovis_aries_BOVIDAE_CETARTIODACTYLA,ovis_aries
+ovis_aries_gca022416775v1,Ovis aries (Texel sheep) - GCA_022416775.1,9940,ASM2241677v1,primary_assembly,0,texel,ovis_aries,False,False,True,Ovis_aries_BOVIDAE_CETARTIODACTYLA,ovis_aries
+ovis_aries_gca022416915v1,Sheep - Polled Dorset,9940,ASM2241691v1,primary_assembly,0,polled_dorset,ovis_aries,False,False,True,Ovis_aries_BOVIDAE_CETARTIODACTYLA,ovis_aries
+ovis_aries_gca022432825v1,Sheep - Chinese merino,9940,ASM2243282v1,primary_assembly,0,chinese_merino,ovis_aries,False,False,True,Ovis_aries_BOVIDAE_CETARTIODACTYLA,ovis_aries
+ovis_aries_gca022432835v1,Sheep - Kermani,9940,ASM2243283v1,primary_assembly,0,kermani,ovis_aries,False,False,True,Ovis_aries_BOVIDAE_CETARTIODACTYLA,ovis_aries
+ovis_aries_gca024222175v1,Sheep - Romanov,9940,ASM2422217v1,primary_assembly,0,romanov,ovis_aries,False,False,True,Ovis_aries_BOVIDAE_CETARTIODACTYLA,ovis_aries
+ovis_aries_texel,Sheep - Texel,9940,Oar_v3.1,chromosome,0,texel,ovis_aries,False,False,True,Ovis_aries_BOVIDAE_CETARTIODACTYLA,ovis_aries
+pan_paniscus,Bonobo,9597,panpan1.1,chromosome,1,,pan_paniscus,True,True,False,Pan_paniscus_HOMINIDAE_PRIMATES,
+pan_troglodytes,Chimpanzee,9598,Pan_tro_3.0,chromosome,1,,pan_troglodytes,True,True,True,Pan_troglodytes_HOMINIDAE_PRIMATES,pan_troglodytes
+panthera_leo,Lion,9689,PanLeo1.0,primary_assembly,1,,panthera_leo,True,True,True,Panthera_leo_FELIDAE_CARNIVORA,panthera_leo
+panthera_pardus,Leopard,9691,PanPar1.0,scaffold,1,,panthera_pardus,True,True,True,Panthera_pardus_FELIDAE_CARNIVORA,panthera_pardus
+panthera_tigris_altaica,Tiger,74533,PanTig1.0,scaffold,1,,panthera_tigris,False,True,True,Panthera_tigris_FELIDAE_CARNIVORA,panthera_tigris
+papio_anubis,Olive baboon,9555,Panubis1.0,primary_assembly,1,,papio_anubis,True,True,False,Papio_anubis_CERCOPITHECIDAE_PRIMATES,
+peromyscus_maniculatus_bairdii,Northern American deer mouse,230844,HU_Pman_2.1,primary_assembly,1,,peromyscus_maniculatus,False,True,True,Peromyscus_maniculatus_CRICETIDAE_RODENTIA,peromyscus_maniculatus
+phascolarctos_cinereus,Koala,38626,phaCin_unsw_v4.1,primary_assembly,1,,phascolarctos_cinereus,True,True,True,Phascolarctos_cinereus_PHASCOLARCTIDAE_DIPROTODONTIA,phascolarctos_cinereus
+phocoena_sinus,Vaquita,42100,mPhoSin1.pri,primary_assembly,1,,phocoena_sinus,True,True,False,Phocoena_sinus_PHOCOENIDAE_CETARTIODACTYLA,
+physeter_catodon,Sperm whale,9755,ASM283717v2,primary_assembly,1,,physeter_catodon,True,True,True,Physeter_macrocephalus_PHYSETERIDAE_CETARTIODACTYLA,physeter_macrocephalus
+piliocolobus_tephrosceles,Ugandan red Colobus,591936,ASM277652v2,primary_assembly,0,,piliocolobus_tephrosceles,True,True,False,,
+pongo_abelii,Sumatran orangutan,9601,Susie_PABv2,primary_assembly,1,,pongo_abelii,True,True,False,Pongo_abelii_HOMINIDAE_PRIMATES,
+procavia_capensis,Hyrax,9813,proCap1,genescaffold,1,,procavia_capensis,True,True,True,Procavia_capensis_PROCAVIIDAE_HYRACOIDEA,procavia_capensis
+prolemur_simus,Greater bamboo lemur,1328070,Prosim_1.0,primary_assembly,1,,prolemur_simus,True,True,True,Prolemur_simus_LEMURIDAE_PRIMATES,prolemur_simus
+propithecus_coquereli,Coquerel's sifaka,379532,Pcoq_1.0,scaffold,1,,propithecus_coquereli,True,True,False,Propithecus_coquereli_INDRIIDAE_PRIMATES,
+pteropus_vampyrus,Megabat,132908,pteVam1,genescaffold,1,,pteropus_vampyrus,True,True,True,Pteropus_vampyrus_PTEROPODIDAE_CHIROPTERA,pteropus_vampyrus
+rattus_norvegicus,Norway rat - BN/NHsdMcwi,10116,GRCr8,primary_assembly,1,reference,rattus_norvegicus,True,True,True,Rattus_norvegicus_MURIDAE_RODENTIA,rattus_norvegicus
+rattus_norvegicus_shrspbbbutx,Rat - SHRSP/BbbUtx,10116,UTH_Rnor_SHRSP_BbbUtx_1.0,primary_assembly,0,SHRSP/BbbUtx,rattus_norvegicus,False,False,True,Rattus_norvegicus_MURIDAE_RODENTIA,rattus_norvegicus
+rattus_norvegicus_shrutx,Rat - SHR/Utx RGD_8142385,10116,UTH_Rnor_SHR_Utx,primary_assembly,0,SHR/Utx RGD_8142385,rattus_norvegicus,False,False,True,Rattus_norvegicus_MURIDAE_RODENTIA,rattus_norvegicus
+rattus_norvegicus_wkybbb,Rat - WKY/Bbb RGD_1581635,10116,UTH_Rnor_WKY_Bbb_1.0,primary_assembly,0,WKY/Bbb RGD_1581635,rattus_norvegicus,False,False,True,Rattus_norvegicus_MURIDAE_RODENTIA,rattus_norvegicus
+rhinolophus_ferrumequinum,Greater horseshoe bat,59479,mRhiFer1_v1.p,primary_assembly,1,,rhinolophus_ferrumequinum,True,True,True,Rhinolophus_ferrumequinum_RHINOLOPHIDAE_CHIROPTERA,rhinolophus_ferrumequinum
+rhinopithecus_bieti,Black snub-nosed monkey,61621,ASM169854v1,scaffold,1,,rhinopithecus_bieti,True,True,False,Rhinopithecus_bieti_CERCOPITHECIDAE_PRIMATES,
+rhinopithecus_roxellana,Golden snub-nosed monkey,61622,Rrox_v1,scaffold,1,,rhinopithecus_roxellana,True,True,True,Rhinopithecus_roxellana_CERCOPITHECIDAE_PRIMATES,rhinopithecus_roxellana
+saimiri_boliviensis_boliviensis,Bolivian squirrel monkey,39432,SaiBol1.0,scaffold,1,,saimiri_boliviensis,False,True,True,Saimiri_boliviensis_CEBIDAE_PRIMATES,saimiri_boliviensis
+sarcophilus_harrisii,Tasmanian devil,9305,mSarHar1.11,primary_assembly,1,,sarcophilus_harrisii,True,True,True,Sarcophilus_harrisii_DASYURIDAE_DASYUROMORPHIA,sarcophilus_harrisii
+sciurus_vulgaris,Eurasian red squirrel,55149,mSciVul1.1,primary_assembly,1,,sciurus_vulgaris,True,True,True,Sciurus_vulgaris_SCIURIDAE_RODENTIA,sciurus_vulgaris
+sorex_araneus,Shrew,42254,sorAra1,genescaffold,1,,sorex_araneus,True,True,True,Sorex_araneus_SORICIDAE_EULIPOTYPHLA,sorex_araneus
+spermophilus_dauricus,Daurian ground squirrel,99837,ASM240643v1,primary_assembly,0,,spermophilus_dauricus,True,True,False,Spermophilus_dauricus_SCIURIDAE_RODENTIA,
+suricata_suricatta,Meerkat,37032,meerkat_22Aug2017_6uvM2_HiC,primary_assembly,0,,suricata_suricatta,True,True,True,Suricata_suricatta_HERPESTIDAE_CARNIVORA,suricata_suricatta
+sus_scrofa,Pig,9823,Sscrofa11.1,primary_assembly,1,reference,sus_scrofa,True,True,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_bamei,Pig - Bamei,9823,Bamei_pig_v1,primary_assembly,1,bamei,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_berkshire,Pig - Berkshire,9823,Berkshire_pig_v1,primary_assembly,1,berkshire,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_gca007644095v1,Pig - Bama miniature,9823,ASM764409v1,primary_assembly,1,bama_miniature,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_gca015776825v1,Pig - Duroc,9823,Ninghe_Sus_1,primary_assembly,1,duroc,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_gca017957985v1,Pig - Meishan (GCA_017957985.1),9825,ASM1795798v1,primary_assembly,1,Meishan,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_gca018555405v1,Pig - NIHS-2020,9823,ASM1855540v1,primary_assembly,1,nihs_2020,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_gca019290145v1,Pig - PB115,9823,CAU-K,primary_assembly,1,pb115,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_gca020567905v1,Pig - Ningxiang,9825,ASM2056790v1,primary_assembly,1,ningxiang,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_gca021656055v1,Pig - euw1 (european wild boar),9823,ASM2165605v1,primary_assembly,1,euw1,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_gca024718415v1,Pig - Ossabaw miniature,9823,ASM2471841v1,primary_assembly,1,ossabaw_miniature,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_gca037447515v1,Pig - Chenghua,9823,ASM3744751v1,primary_assembly,1,chenghua,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_gca039654815v1,Pig - Korean minipig (GCA_039654815.1),9823,ASM3965481v1,primary_assembly,1,Korean minipig,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_gca040869115v1,Pig - Juema,9823,ASM4086911v1,primary_assembly,1,juema,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_gca041937265v1,Pig - Banna miniature,9823,Banna,primary_assembly,1,banna_miniature,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_gca044906105v1,Pig - Large White (GCA_044906105.1),9823,ASM4490610v1,primary_assembly,1,large_white,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_gca044906185v1,Pig - HJB,9823,ASM4490618v1,primary_assembly,1,hjb,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_gca046128825v1,Pig - Ghungroo,9823,ICAR-NRCP-G1,primary_assembly,1,Ghungroo,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_gca048338725v1,Pig - Wuzhishan (GCA_048338725.1),9823,T2T_pig1.0,primary_assembly,1,wuzhishan,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_gca963921485v1,Pig - Norwegian Landrace,9823,norwegian_landrace,primary_assembly,1,Norwegian Landrace,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_hampshire,Pig - Hampshire,9823,Hampshire_pig_v1,primary_assembly,1,hampshire,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_jinhua,Pig - Jinhua,9823,Jinhua_pig_v1,primary_assembly,1,jinhua,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_landrace,Pig - Landrace,9823,Landrace_pig_v1,primary_assembly,1,landrace,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_largewhite,Pig - Largewhite,9823,Large_White_v1,primary_assembly,1,largewhite,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_meishan,Pig - Meishan,9823,Meishan_pig_v1,primary_assembly,1,meishan,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_pietrain,Pig - Pietrain,9823,Pietrain_pig_v1,primary_assembly,1,pietrain,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_rongchang,Pig - Rongchang,9823,Rongchang_pig_v1,primary_assembly,1,rongchang,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_tibetan,Pig - Tibetan,9823,Tibetan_Pig_v2,primary_assembly,1,tibetan,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_usmarc,Pig USMARC,9823,USMARCv1.0,primary_assembly,1,usmarc,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+sus_scrofa_wuzhishan,Pig - Wuzhishan,9823,minipig_v1.0,primary_assembly,1,wuzhishan,sus_scrofa,False,False,True,Sus_scrofa_SUIDAE_CETARTIODACTYLA,sus_scrofa
+theropithecus_gelada,Gelada,9565,Tgel_1.0,primary_assembly,0,,theropithecus_gelada,True,True,True,Theropithecus_gelada_CERCOPITHECIDAE_PRIMATES,theropithecus_gelada
+tupaia_belangeri,Tree Shrew,37347,tupBel1,genescaffold,1,,tupaia_belangeri,True,True,True,Tupaia_belangeri_TUPAIIDAE_SCANDENTIA,tupaia_belangeri
+tursiops_truncatus,Dolphin,9739,turTru1,genescaffold,1,,tursiops_truncatus,True,True,True,Tursiops_truncatus_DELPHINIDAE_CETARTIODACTYLA,tursiops_truncatus
+urocitellus_parryii,Arctic ground squirrel,9999,ASM342692v1,primary_assembly,1,,urocitellus_parryii,True,True,False,Urocitellus_parryii_SCIURIDAE_RODENTIA,
+ursus_americanus,American black bear,9643,ASM334442v1,primary_assembly,1,,ursus_americanus,True,True,True,Ursus_americanus_URSIDAE_CARNIVORA,ursus_americanus
+ursus_maritimus,Polar bear,29073,UrsMar_1.0,primary_assembly,1,,ursus_maritimus,True,True,True,Ursus_maritimus_URSIDAE_CARNIVORA,ursus_maritimus
+ursus_thibetanus_thibetanus,Asiatic black bear,441215,ASM966005v1,primary_assembly,0,,ursus_thibetanus,False,True,True,Ursus_thibetanus_URSIDAE_CARNIVORA,ursus_thibetanus
+vicugna_pacos,Alpaca,30538,vicPac1,genescaffold,1,,vicugna_pacos,True,True,True,Vicugna_pacos_CAMELIDAE_CETARTIODACTYLA,vicugna_pacos
+vombatus_ursinus,Common wombat,29139,bare-nosed_wombat_genome_assembly,primary_assembly,1,,vombatus_ursinus,True,True,True,Vombatus_ursinus_VOMBATIDAE_DIPROTODONTIA,vombatus_ursinus
+vulpes_vulpes,Red fox,9627,VulVul2.2,primary_assembly,1,,vulpes_vulpes,True,True,True,Vulpes_vulpes_CANIDAE_CARNIVORA,vulpes_vulpes
+zalophus_californianus,California sea lion,9704,mZalCal1.pri,primary_assembly,0,,zalophus_californianus,True,True,True,Zalophus_californianus_OTARIIDAE_CARNIVORA,zalophus_californianus
