@@ -1,0 +1,20 @@
+[
+  {
+    "file": "PLAN_ANALISIS.md",
+    "sha256": "a19e49f3b3459d5e51017ade7abdf38e00e495ea7890e71e1c6263f458a312c4",
+    "recorded_utc": "2026-10-09T19:11:17Z",
+    "note": "initial plan, before protein/ortholog/structure data retrieval"
+  },
+  {
+    "file": "PLAN_ANALISIS.md",
+    "sha256": "cde06e63ac5dd4d5e3f1ac70ca70b2f0998f4b2e68b06feb73f100df1b837647",
+    "recorded_utc": "2026-10-09T20:42:12Z",
+    "note": "with amendment E1, immediately before running 07_stats.py"
+  },
+  {
+    "file": "PLAN_ANALISIS.md",
+    "sha256": "e5f766d800fb7a354da1d6356531734151d41279b6c2390be7c44022cff7fc26",
+    "recorded_utc": "2026-10-10T06:27:42Z",
+    "note": "with amendment E2 (post hoc: human-template follow-up and per-gene calibration), before computing it"
+  }
+]

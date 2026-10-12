@@ -1,0 +1,41 @@
+{
+  "genes_used": 300,
+  "species": 40,
+  "r_species_zebrafish_coelacanth": 0.9722321816355748,
+  "P1_like_all_species_zebrafish": {
+    "beta": 0.03112601781207979,
+    "se": 0.057157685911248764,
+    "ci95_low": -0.08468645458547755,
+    "ci95_high": 0.14693849020963715,
+    "p_wald": 0.5893206968578583,
+    "lambda": 0.2394575624897846
+  },
+  "P1_like_all_species_latimeria_chalumnae": {
+    "beta": 0.028866750859942326,
+    "se": 0.061618314060548796,
+    "ci95_low": -0.09598381267410223,
+    "ci95_high": 0.1537173143939869,
+    "p_wald": 0.6421919911885211,
+    "lambda": 0.21685755206295507
+  },
+  "P1_like_reptiles_only_zebrafish": {
+    "beta": -0.0471257009930561,
+    "se": 0.05786587555340831,
+    "ci95_low": -0.16607071168593185,
+    "ci95_high": 0.07181930969981966,
+    "p_wald": 0.42281534901016954,
+    "lambda": 0.41918292442527927
+  },
+  "P1_like_reptiles_only_homo_sapiens": {
+    "beta": -0.12970445575215184,
+    "se": 0.04821037685560403,
+    "ci95_low": -0.22880230462691298,
+    "ci95_high": -0.030606606877390696,
+    "p_wald": 0.012303695710908879,
+    "lambda": 0.0
+  },
+  "r_species_reptiles_zebrafish_human": 0.9107101432967717,
+  "turtle_offset_SD_zebrafish": -1.475099251187881,
+  "turtle_offset_SD_latimeria_chalumnae": -1.3159681760436428,
+  "turtle_offset_SD_homo_sapiens": -1.4588954538758565
+}

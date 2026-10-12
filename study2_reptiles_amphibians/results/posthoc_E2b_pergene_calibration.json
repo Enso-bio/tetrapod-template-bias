@@ -1,0 +1,42 @@
+{
+  "amendment": "E2(b) (post hoc, exploratory)",
+  "n_tests": 1798,
+  "B": 1000,
+  "null_model": {
+    "lambda": 0.17865117799967314,
+    "sigma2_ml": 0.05343432446901371,
+    "beta": [
+      1.038984921015467,
+      0.13724521761875114
+    ]
+  },
+  "observed_fraction_lambda_lt_0.05": 0.38264738598442716,
+  "lambda_ML": {
+    "observed_nominal": 207,
+    "null_mean": 139.271,
+    "null_sd": 78.18897028401176,
+    "null_interval95": [
+      25.0,
+      294.025
+    ],
+    "null_false_positive_rate": 0.07745884315906562,
+    "p_calibrated_count": 0.22877122877122877,
+    "genes_empirical_p_lt_0.05": 131,
+    "genes_empirical_q_lt_0.05": 0,
+    "min_empirical_p": 0.000999000999000999
+  },
+  "lambda_fixed_null": {
+    "observed_nominal": 111,
+    "null_mean": 89.668,
+    "null_sd": 48.90295773545068,
+    "null_interval95": [
+      25.0,
+      214.04999999999995
+    ],
+    "null_false_positive_rate": 0.04987096774193549,
+    "p_calibrated_count": 0.25774225774225773,
+    "genes_empirical_p_lt_0.05": 107,
+    "genes_empirical_q_lt_0.05": 0,
+    "min_empirical_p": 0.000999000999000999
+  }
+}
